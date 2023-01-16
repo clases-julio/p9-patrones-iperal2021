@@ -1,0 +1,419 @@
+\hypertarget{classSecurity}{}\doxysection{Security Class Reference}
+\label{classSecurity}\index{Security@{Security}}
+
+
+{\ttfamily \#include $<$Security.\+h$>$}
+
+
+
+Collaboration diagram for Security\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classSecurity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSecurity_adf21beb426ecd12c71c75aa8bd02e39f}{Security}} ()
+\item 
+void \mbox{\hyperlink{classSecurity_a958ecc5c54bb9095a1c244658f69e5c5}{security}} (string)
+\begin{DoxyCompactList}\small\item\em Depend on the instruction, the security class shows a different menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classSecurity_a04a69ee99e8d156361ea9fc8a4671bba}{seguridad}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSecurity_a803237d53399af6da507aa3226119196}{door}} ()
+\item 
+void \mbox{\hyperlink{classSecurity_a9c081e47e5996b62af89b22d90a875d3}{window}} ()
+\item 
+void \mbox{\hyperlink{classSecurity_a00b9caa35b45beeaa4a59cae40fa8793}{camera}} ()
+\item 
+void \mbox{\hyperlink{classSecurity_af8004a734ddfa73328fd87890924acf6}{alarm}} ()
+\item 
+void \mbox{\hyperlink{classSecurity_a6122ba0a7c43458c61885987e3cec405}{open\+\_\+close}} ()
+\item 
+int \mbox{\hyperlink{classSecurity_a2555ed53dd852a393f15964e2c73fe7f}{generate\+\_\+random}} ()
+\begin{DoxyCompactList}\small\item\em Generate a random value and depend on it in some methods is used to generate a true or false value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSecurity_ac3bc1068523e8997aeefd80f11b98284}{go\+Back\+Security}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}}
+\item 
+string \mbox{\hyperlink{classSecurity_a474a562be02fd3da21fb8a7f34ec701b}{alarma\+\_\+status}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Security.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSecurity_adf21beb426ecd12c71c75aa8bd02e39f}\label{classSecurity_adf21beb426ecd12c71c75aa8bd02e39f}} 
+\index{Security@{Security}!Security@{Security}}
+\index{Security@{Security}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{Security()}{Security()}}
+{\footnotesize\ttfamily Security\+::\+Security (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Security.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSecurity_af8004a734ddfa73328fd87890924acf6}\label{classSecurity_af8004a734ddfa73328fd87890924acf6}} 
+\index{Security@{Security}!alarm@{alarm}}
+\index{alarm@{alarm}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{alarm()}{alarm()}}
+{\footnotesize\ttfamily void Security\+::alarm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 118 of file Security.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                      \{}
+\DoxyCodeLine{119     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{120         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tAlarma: "{}} << \mbox{\hyperlink{Security_8cpp_a978f814afbdd81720380a27e0fc49b7a}{alarm\_status}} << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{121         cout << \textcolor{stringliteral}{"{}Para encender introduzca 1, para apagar introduzca 2, para salir 0\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{122         cout << \textcolor{stringliteral}{"{}>>> "{}};}
+\DoxyCodeLine{123         cin >> \mbox{\hyperlink{Security_8cpp_a9aa298457df2ada3959eb0eb2af69ac7}{entrada}};}
+\DoxyCodeLine{124         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{Security_8cpp_a9aa298457df2ada3959eb0eb2af69ac7}{entrada}}) \{}
+\DoxyCodeLine{125         }
+\DoxyCodeLine{126         \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{127             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{130             \mbox{\hyperlink{Security_8cpp_a978f814afbdd81720380a27e0fc49b7a}{alarm\_status}} = \textcolor{stringliteral}{"{}encendido"{}};}
+\DoxyCodeLine{131             \mbox{\hyperlink{Security_8cpp_a8d45b0590b9dd3c6643c4aa57554b992}{db}}.\mbox{\hyperlink{classDashboard_aae48f10aceb9a1d9cea5919d0abc6759}{cabecera}}();}
+\DoxyCodeLine{132             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{135             \mbox{\hyperlink{Security_8cpp_a978f814afbdd81720380a27e0fc49b7a}{alarm\_status}} = \textcolor{stringliteral}{"{}apagado"{}};}
+\DoxyCodeLine{136             \mbox{\hyperlink{Security_8cpp_a8d45b0590b9dd3c6643c4aa57554b992}{db}}.\mbox{\hyperlink{classDashboard_aae48f10aceb9a1d9cea5919d0abc6759}{cabecera}}();}
+\DoxyCodeLine{137             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{138         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{139             cout << \textcolor{stringliteral}{"{}Orden incorrecta"{}} << endl;}
+\DoxyCodeLine{140             system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{141             \mbox{\hyperlink{Security_8cpp_a8d45b0590b9dd3c6643c4aa57554b992}{db}}.\mbox{\hyperlink{classDashboard_aae48f10aceb9a1d9cea5919d0abc6759}{cabecera}}();}
+\DoxyCodeLine{142             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{143         \}}
+\DoxyCodeLine{144     \}}
+\DoxyCodeLine{145 \}}
+
+\end{DoxyCode}
+
+
+References alarm\+\_\+status, Dashboard\+::cabecera(), db, and entrada.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classSecurity_af8004a734ddfa73328fd87890924acf6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSecurity_a00b9caa35b45beeaa4a59cae40fa8793}\label{classSecurity_a00b9caa35b45beeaa4a59cae40fa8793}} 
+\index{Security@{Security}!camera@{camera}}
+\index{camera@{camera}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{camera()}{camera()}}
+{\footnotesize\ttfamily void Security\+::camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 100 of file Security.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                       \{}
+\DoxyCodeLine{101     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{102         cout << \textcolor{stringliteral}{"{}Imagina que hay una camara"{}} << endl;}
+\DoxyCodeLine{103         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tPara volver atrás introduzca 0 + ENTER"{}} << endl;}
+\DoxyCodeLine{104         cin >> \mbox{\hyperlink{Security_8cpp_a477231f920e9699538aaf002e11e07ce}{back}};}
+\DoxyCodeLine{105         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{Security_8cpp_a477231f920e9699538aaf002e11e07ce}{back}}) \{}
+\DoxyCodeLine{106         \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{107             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{108             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{109         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{110             cout << \textcolor{stringliteral}{"{}Orden incorrecta"{}} << endl;}
+\DoxyCodeLine{111             system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{112             \mbox{\hyperlink{Security_8cpp_a8d45b0590b9dd3c6643c4aa57554b992}{db}}.\mbox{\hyperlink{classDashboard_aae48f10aceb9a1d9cea5919d0abc6759}{cabecera}}();}
+\DoxyCodeLine{113             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{114         \}}
+\DoxyCodeLine{115     \}}
+\DoxyCodeLine{116 \}}
+
+\end{DoxyCode}
+
+
+References back, Dashboard\+::cabecera(), and db.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classSecurity_a00b9caa35b45beeaa4a59cae40fa8793_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSecurity_a803237d53399af6da507aa3226119196}\label{classSecurity_a803237d53399af6da507aa3226119196}} 
+\index{Security@{Security}!door@{door}}
+\index{door@{door}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{door()}{door()}}
+{\footnotesize\ttfamily void Security\+::door (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Security.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                     \{}
+\DoxyCodeLine{43     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{44         \mbox{\hyperlink{classSecurity_a6122ba0a7c43458c61885987e3cec405}{open\_close}}();}
+\DoxyCodeLine{45         cout << \textcolor{stringliteral}{"{}Puerta: 01\(\backslash\)tLocalización: Huerto\(\backslash\)tEstado: "{}} << \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}} << endl;}
+\DoxyCodeLine{46         \mbox{\hyperlink{classSecurity_a6122ba0a7c43458c61885987e3cec405}{open\_close}}();}
+\DoxyCodeLine{47         cout << \textcolor{stringliteral}{"{}Puerta: 02\(\backslash\)tLocalización: Almacen\(\backslash\)tEstado: "{}} << \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}} << endl;}
+\DoxyCodeLine{48         \mbox{\hyperlink{classSecurity_a6122ba0a7c43458c61885987e3cec405}{open\_close}}();}
+\DoxyCodeLine{49         cout << \textcolor{stringliteral}{"{}Puerta: 03\(\backslash\)tLocalización: Despacho\(\backslash\)tEstado: "{}} << \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}} << endl;}
+\DoxyCodeLine{50         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tPara volver atrás introduzca 0 + ENTER"{}} << endl;}
+\DoxyCodeLine{51         cout << \textcolor{stringliteral}{"{}>>> "{}};}
+\DoxyCodeLine{52         cin >> \mbox{\hyperlink{Security_8cpp_a477231f920e9699538aaf002e11e07ce}{back}};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54         \textcolor{comment}{// If an order different of 0 is inserted, the door menu is restarted.}}
+\DoxyCodeLine{55         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{Security_8cpp_a477231f920e9699538aaf002e11e07ce}{back}}) \{}
+\DoxyCodeLine{56         }
+\DoxyCodeLine{57         \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{58             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{59             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{60         }
+\DoxyCodeLine{61         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{62             }
+\DoxyCodeLine{63             cout << \textcolor{stringliteral}{"{}Orden incorrecta"{}} << endl;}
+\DoxyCodeLine{64             system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{65             \mbox{\hyperlink{Security_8cpp_a8d45b0590b9dd3c6643c4aa57554b992}{db}}.\mbox{\hyperlink{classDashboard_aae48f10aceb9a1d9cea5919d0abc6759}{cabecera}}();}
+\DoxyCodeLine{66             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69 \}    }
+
+\end{DoxyCode}
+
+
+References back, Dashboard\+::cabecera(), db, and open.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classSecurity_a803237d53399af6da507aa3226119196_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSecurity_a2555ed53dd852a393f15964e2c73fe7f}\label{classSecurity_a2555ed53dd852a393f15964e2c73fe7f}} 
+\index{Security@{Security}!generate\_random@{generate\_random}}
+\index{generate\_random@{generate\_random}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{generate\_random()}{generate\_random()}}
+{\footnotesize\ttfamily int Security\+::generate\+\_\+random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generate a random value and depend on it in some methods is used to generate a true or false value. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file Security.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{148                               \{}
+\DoxyCodeLine{149     srand(time(NULL));}
+\DoxyCodeLine{150     \textcolor{keywordflow}{return} rand()\%10;}
+\DoxyCodeLine{151 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSecurity_ac3bc1068523e8997aeefd80f11b98284}\label{classSecurity_ac3bc1068523e8997aeefd80f11b98284}} 
+\index{Security@{Security}!goBackSecurity@{goBackSecurity}}
+\index{goBackSecurity@{goBackSecurity}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{goBackSecurity()}{goBackSecurity()}}
+{\footnotesize\ttfamily void Security\+::go\+Back\+Security (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSecurity_a6122ba0a7c43458c61885987e3cec405}\label{classSecurity_a6122ba0a7c43458c61885987e3cec405}} 
+\index{Security@{Security}!open\_close@{open\_close}}
+\index{open\_close@{open\_close}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{open\_close()}{open\_close()}}
+{\footnotesize\ttfamily void Security\+::open\+\_\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 154 of file Security.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154                           \{}
+\DoxyCodeLine{155     \textcolor{keywordtype}{int} random = \mbox{\hyperlink{classSecurity_a2555ed53dd852a393f15964e2c73fe7f}{generate\_random}}();}
+\DoxyCodeLine{156     \textcolor{keywordflow}{if} (random >= 0 \&\& random <= 4) \{}
+\DoxyCodeLine{157         \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}} = \textcolor{stringliteral}{"{}close"{}};}
+\DoxyCodeLine{158     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{159         \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}} = \textcolor{stringliteral}{"{}open"{}};}
+\DoxyCodeLine{160     \}}
+\DoxyCodeLine{161 \}}
+
+\end{DoxyCode}
+
+
+References open.
+
+\mbox{\Hypertarget{classSecurity_a958ecc5c54bb9095a1c244658f69e5c5}\label{classSecurity_a958ecc5c54bb9095a1c244658f69e5c5}} 
+\index{Security@{Security}!security@{security}}
+\index{security@{security}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{security()}{security()}}
+{\footnotesize\ttfamily void Security\+::security (\begin{DoxyParamCaption}\item[{string}]{seguridad }\end{DoxyParamCaption})}
+
+
+
+Depend on the instruction, the security class shows a different menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & seguridad, depending on it\textquotesingle{}s \char`\"{}value\char`\"{} the class shows a different menu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file Security.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                                         \{}
+\DoxyCodeLine{30     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSecurity_a04a69ee99e8d156361ea9fc8a4671bba}{seguridad}} == \textcolor{stringliteral}{"{}puertas"{}}) \{}
+\DoxyCodeLine{31         \mbox{\hyperlink{classSecurity_a803237d53399af6da507aa3226119196}{door}}();}
+\DoxyCodeLine{32     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSecurity_a04a69ee99e8d156361ea9fc8a4671bba}{seguridad}} == \textcolor{stringliteral}{"{}ventanas"{}}) \{}
+\DoxyCodeLine{33         \mbox{\hyperlink{classSecurity_a9c081e47e5996b62af89b22d90a875d3}{window}}();}
+\DoxyCodeLine{34     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSecurity_a04a69ee99e8d156361ea9fc8a4671bba}{seguridad}} == \textcolor{stringliteral}{"{}camaras"{}}) \{}
+\DoxyCodeLine{35         \mbox{\hyperlink{classSecurity_a00b9caa35b45beeaa4a59cae40fa8793}{camera}}();}
+\DoxyCodeLine{36     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSecurity_a04a69ee99e8d156361ea9fc8a4671bba}{seguridad}} == \textcolor{stringliteral}{"{}alarma"{}}) \{}
+\DoxyCodeLine{37         \mbox{\hyperlink{classSecurity_af8004a734ddfa73328fd87890924acf6}{alarm}}();}
+\DoxyCodeLine{38     \}}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}
+
+
+References seguridad.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSecurity_a958ecc5c54bb9095a1c244658f69e5c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSecurity_a9c081e47e5996b62af89b22d90a875d3}\label{classSecurity_a9c081e47e5996b62af89b22d90a875d3}} 
+\index{Security@{Security}!window@{window}}
+\index{window@{window}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{window()}{window()}}
+{\footnotesize\ttfamily void Security\+::window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Security.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                       \{}
+\DoxyCodeLine{73     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{74         \mbox{\hyperlink{classSecurity_a6122ba0a7c43458c61885987e3cec405}{open\_close}}();}
+\DoxyCodeLine{75         cout << \textcolor{stringliteral}{"{}Ventana: 01\(\backslash\)tLocalización: Huerto\(\backslash\)tEstado: "{}} << \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}} << endl;}
+\DoxyCodeLine{76         \mbox{\hyperlink{classSecurity_a6122ba0a7c43458c61885987e3cec405}{open\_close}}();}
+\DoxyCodeLine{77         cout << \textcolor{stringliteral}{"{}Ventana: 02\(\backslash\)tLocalización: Almacen\(\backslash\)tEstado: "{}} << \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}} << endl;}
+\DoxyCodeLine{78         \mbox{\hyperlink{classSecurity_a6122ba0a7c43458c61885987e3cec405}{open\_close}}();}
+\DoxyCodeLine{79         cout << \textcolor{stringliteral}{"{}Ventana: 03\(\backslash\)tLocalización: Despacho\(\backslash\)tEstado: "{}} << \mbox{\hyperlink{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}{open}} << endl;}
+\DoxyCodeLine{80         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tPara volver atrás introduzca 0 + ENTER"{}} << endl;}
+\DoxyCodeLine{81         cin >> \mbox{\hyperlink{Security_8cpp_a477231f920e9699538aaf002e11e07ce}{back}};}
+\DoxyCodeLine{82         \textcolor{comment}{// if an order different of 0 the programm restart}}
+\DoxyCodeLine{83         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{Security_8cpp_a477231f920e9699538aaf002e11e07ce}{back}}) \{}
+\DoxyCodeLine{84         }
+\DoxyCodeLine{85         \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{86             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{87             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{88         }
+\DoxyCodeLine{89         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{90             }
+\DoxyCodeLine{91             cout << \textcolor{stringliteral}{"{}Orden incorrecta"{}} << endl;}
+\DoxyCodeLine{92             system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{93             \mbox{\hyperlink{Security_8cpp_a8d45b0590b9dd3c6643c4aa57554b992}{db}}.\mbox{\hyperlink{classDashboard_aae48f10aceb9a1d9cea5919d0abc6759}{cabecera}}();}
+\DoxyCodeLine{94             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+\DoxyCodeLine{97 \}}
+
+\end{DoxyCode}
+
+
+References back, Dashboard\+::cabecera(), db, and open.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classSecurity_a9c081e47e5996b62af89b22d90a875d3_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSecurity_a474a562be02fd3da21fb8a7f34ec701b}\label{classSecurity_a474a562be02fd3da21fb8a7f34ec701b}} 
+\index{Security@{Security}!alarma\_status@{alarma\_status}}
+\index{alarma\_status@{alarma\_status}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{alarma\_status}{alarma\_status}}
+{\footnotesize\ttfamily string Security\+::alarma\+\_\+status\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 49 of file Security.\+h.
+
+\mbox{\Hypertarget{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}\label{classSecurity_ac2d2f9ba2138f11d7bc87cf2e0a2d45f}} 
+\index{Security@{Security}!open@{open}}
+\index{open@{open}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{open}{open}}
+{\footnotesize\ttfamily string Security\+::open\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 48 of file Security.\+h.
+
+\mbox{\Hypertarget{classSecurity_a04a69ee99e8d156361ea9fc8a4671bba}\label{classSecurity_a04a69ee99e8d156361ea9fc8a4671bba}} 
+\index{Security@{Security}!seguridad@{seguridad}}
+\index{seguridad@{seguridad}!Security@{Security}}
+\doxysubsubsection{\texorpdfstring{seguridad}{seguridad}}
+{\footnotesize\ttfamily string Security\+::seguridad}
+
+
+
+Definition at line 20 of file Security.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Security_8h}{Security.\+h}}\item 
+src/\mbox{\hyperlink{Security_8cpp}{Security.\+cpp}}\end{DoxyCompactItemize}

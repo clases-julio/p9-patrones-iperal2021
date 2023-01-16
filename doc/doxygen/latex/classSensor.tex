@@ -1,0 +1,229 @@
+\hypertarget{classSensor}{}\doxysection{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+
+
+Inheritance diagram for Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classSensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}} ()
+\item 
+void \mbox{\hyperlink{classSensor_a5dc59fbc34a1432538d0af51d0c93486}{get\+Data}} (int)
+\begin{DoxyCompactList}\small\item\em Get the Data of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSensor_a7857c854b42e63333cd38c47aaf36e60}{cabecera\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Heading used in all the sensors. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSensor_ae6d56a02f17f42d2687cb600e1a6f782}{random\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Method that generate a random number which is used to show a value for each sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSensor_abbcdf6697448cef9fc96ff61ab626468}{go\+Back\+Sensor}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSensor_a916bc79911fab1db4e27bcb0998c58a3}{back\+\_\+1}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 18 of file Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}\label{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}} 
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}}
+{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSensor_a7857c854b42e63333cd38c47aaf36e60}\label{classSensor_a7857c854b42e63333cd38c47aaf36e60}} 
+\index{Sensor@{Sensor}!cabeceraSensor@{cabeceraSensor}}
+\index{cabeceraSensor@{cabeceraSensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{cabeceraSensor()}{cabeceraSensor()}}
+{\footnotesize\ttfamily void Sensor\+::cabecera\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Heading used in all the sensors. 
+
+
+
+Definition at line 72 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                             \{}
+\DoxyCodeLine{73     system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{74     cout << \textcolor{stringliteral}{"{}\(\backslash\)x1b[32m                                                                                         \(\backslash\)n"{}}          }
+\DoxyCodeLine{75 \textcolor{stringliteral}{"{}          / /                          ||   / /                                                      \(\backslash\)n"{}}}
+\DoxyCodeLine{76 \textcolor{stringliteral}{"{}         / /          // ( )  \_\_\_      ||  / /  \_\_\_      \_\_\_      \_\_\_       \_\_      \_\_\_      \_\_\_     \(\backslash\)n"{}}}
+\DoxyCodeLine{77 \textcolor{stringliteral}{"{}        / / //   / / // / / //   ) )   || / / //\_\_\_) ) //   ) ) //   ) ) //   ) ) //   ) ) ((   ) )  \(\backslash\)n"{}}}
+\DoxyCodeLine{78 \textcolor{stringliteral}{"{}       / / //   / / // / / //   / /    ||/ / //       ((\_\_\_/ / //   / / //   / / //   / /   \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)    \(\backslash\)n"{}}}
+\DoxyCodeLine{79 \textcolor{stringliteral}{"{} ((\_\_\_/ / ((\_\_\_( ( // / / ((\_\_\_/ /     |  / ((\_\_\_\_     //\_\_   ((\_\_\_( ( //   / / ((\_\_\_/ / //   ) )    \(\backslash\)n"{}}}
+\DoxyCodeLine{80 \textcolor{stringliteral}{"{}                                                                                                     \(\backslash\)n"{}}}
+\DoxyCodeLine{81 \textcolor{stringliteral}{"{}                         //    / /                                                                   \(\backslash\)n"{}}}
+\DoxyCodeLine{82 \textcolor{stringliteral}{"{}            \_\_\_         //\_\_\_ / / ( )     ( )  \_\_\_      \_\_\_                                          \(\backslash\)n"{}}}
+\DoxyCodeLine{83 \textcolor{stringliteral}{"{}          //\_\_\_) )     / \_\_\_   / / /     / / //   ) ) ((   ) )                                       \(\backslash\)n"{}}   }
+\DoxyCodeLine{84 \textcolor{stringliteral}{"{}         //           //    / / / /     / / //   / /   \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)                                         \(\backslash\)n"{}}     }
+\DoxyCodeLine{85 \textcolor{stringliteral}{"{}        ((\_\_\_\_       //    / / / / ((  / / ((\_\_\_/ / //   ) )    \(\backslash\)x1b[0m                            \(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{86 \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ \(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSensor_a5dc59fbc34a1432538d0af51d0c93486}\label{classSensor_a5dc59fbc34a1432538d0af51d0c93486}} 
+\index{Sensor@{Sensor}!getData@{getData}}
+\index{getData@{getData}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily void Sensor\+::get\+Data (\begin{DoxyParamCaption}\item[{int}]{opcion }\end{DoxyParamCaption})}
+
+
+
+Get the Data of the object. 
+
+
+
+Definition at line 28 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28                                \{}
+\DoxyCodeLine{29     }
+\DoxyCodeLine{30     \textcolor{keywordflow}{if} (\mbox{\hyperlink{Dashboard_8cpp_a39f485a4773f634607a5caf635218a32}{opcion}} == 5) \{}
+\DoxyCodeLine{31         \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{32             cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tRGB camera:\(\backslash\)t\(\backslash\)t*imagen*\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{33             cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tPara volver atrás introduzca 0 + ENTER"{}} << endl;}
+\DoxyCodeLine{34             cin >> \mbox{\hyperlink{classSensor_a916bc79911fab1db4e27bcb0998c58a3}{back\_1}};}
+\DoxyCodeLine{35             \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classSensor_a916bc79911fab1db4e27bcb0998c58a3}{back\_1}}) \{}
+\DoxyCodeLine{36         }
+\DoxyCodeLine{37             \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{38                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{39                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{40             }
+\DoxyCodeLine{41             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{42                 }
+\DoxyCodeLine{43                 cout << \textcolor{stringliteral}{"{}Orden incorrecta"{}} << endl;}
+\DoxyCodeLine{44                 system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{45                 \mbox{\hyperlink{classSensor_a7857c854b42e63333cd38c47aaf36e60}{cabeceraSensor}}();}
+\DoxyCodeLine{46                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{47             \}}
+\DoxyCodeLine{48         \}}
+\DoxyCodeLine{49     \}  \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{Dashboard_8cpp_a39f485a4773f634607a5caf635218a32}{opcion}} == 6) \{}
+\DoxyCodeLine{50         \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{51             cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tTermal camera:\(\backslash\)t\(\backslash\)t*imagen*\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{52             cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tPara volver atrás introduzca 0 + ENTER"{}} << endl;}
+\DoxyCodeLine{53             cin >> \mbox{\hyperlink{classSensor_a916bc79911fab1db4e27bcb0998c58a3}{back\_1}};}
+\DoxyCodeLine{54             \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classSensor_a916bc79911fab1db4e27bcb0998c58a3}{back\_1}}) \{}
+\DoxyCodeLine{55         }
+\DoxyCodeLine{56             \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{57                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{58                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{59             }
+\DoxyCodeLine{60             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{61                 }
+\DoxyCodeLine{62                 cout << \textcolor{stringliteral}{"{}Orden incorrecta"{}} << endl;}
+\DoxyCodeLine{63                 system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{64                 \mbox{\hyperlink{classSensor_a7857c854b42e63333cd38c47aaf36e60}{cabeceraSensor}}();}
+\DoxyCodeLine{65                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{66             \}}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69 \}}
+
+\end{DoxyCode}
+
+
+References back\+\_\+1, and opcion.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classSensor_a5dc59fbc34a1432538d0af51d0c93486_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSensor_abbcdf6697448cef9fc96ff61ab626468}\label{classSensor_abbcdf6697448cef9fc96ff61ab626468}} 
+\index{Sensor@{Sensor}!goBackSensor@{goBackSensor}}
+\index{goBackSensor@{goBackSensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{goBackSensor()}{goBackSensor()}}
+{\footnotesize\ttfamily void Sensor\+::go\+Back\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classSensor_ae6d56a02f17f42d2687cb600e1a6f782}\label{classSensor_ae6d56a02f17f42d2687cb600e1a6f782}} 
+\index{Sensor@{Sensor}!randomData@{randomData}}
+\index{randomData@{randomData}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{randomData()}{randomData()}}
+{\footnotesize\ttfamily int Sensor\+::random\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Method that generate a random number which is used to show a value for each sensor. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                        \{}
+\DoxyCodeLine{22     srand(time(NULL));}
+\DoxyCodeLine{23     \textcolor{keywordflow}{return} rand()\%10;}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSensor_a916bc79911fab1db4e27bcb0998c58a3}\label{classSensor_a916bc79911fab1db4e27bcb0998c58a3}} 
+\index{Sensor@{Sensor}!back\_1@{back\_1}}
+\index{back\_1@{back\_1}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{back\_1}{back\_1}}
+{\footnotesize\ttfamily int Sensor\+::back\+\_\+1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 35 of file Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Sensor_8h}{Sensor.\+h}}\item 
+src/\mbox{\hyperlink{Sensor_8cpp}{Sensor.\+cpp}}\end{DoxyCompactItemize}

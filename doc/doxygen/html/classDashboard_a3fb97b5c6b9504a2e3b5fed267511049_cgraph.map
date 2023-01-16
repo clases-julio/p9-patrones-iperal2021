@@ -1,0 +1,5 @@
+<map id="Dashboard::addUserDashboard" name="Dashboard::addUserDashboard">
+<area shape="rect" id="node1" title="Function that allows the admin to add new users." alt="" coords="5,31,229,57"/>
+<area shape="rect" id="node2" href="$classDataBase.html#a3e4d935dada84092c2b3c911f7e679f5" title="Method to add new users." alt="" coords="277,5,424,32"/>
+<area shape="rect" id="node3" href="$classDataBase.html#af6ab6c26576ea672c207d8553ade271f" title="list of the current usersd" alt="" coords="279,56,423,83"/>
+</map>

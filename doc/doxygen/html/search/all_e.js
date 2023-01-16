@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['s_98',['s',['../Dashboard_8cpp.html#adc2bba795d0ae05c8eee051458d073fc',1,'Dashboard.cpp']]],
+  ['security_99',['Security',['../classSecurity.html',1,'Security'],['../classSecurity.html#adf21beb426ecd12c71c75aa8bd02e39f',1,'Security::Security()']]],
+  ['security_100',['security',['../classSecurity.html#a958ecc5c54bb9095a1c244658f69e5c5',1,'Security']]],
+  ['security_2ecpp_101',['Security.cpp',['../Security_8cpp.html',1,'']]],
+  ['security_2eh_102',['Security.h',['../Security_8h.html',1,'']]],
+  ['seguridad_103',['seguridad',['../Security_8cpp.html#abc89014432d723417f4dd611242b0660',1,'seguridad():&#160;Security.cpp'],['../classSecurity.html#a04a69ee99e8d156361ea9fc8a4671bba',1,'Security::seguridad()']]],
+  ['sen_104',['sen',['../Dashboard_8cpp.html#a0af5b12ca928b61720c85d0ef3bb0c1c',1,'Dashboard.cpp']]],
+  ['sensor_105',['Sensor',['../classSensor.html',1,'Sensor'],['../classSensor.html#a342d6d11ef572c8cba92cb76fb1a294b',1,'Sensor::Sensor()']]],
+  ['sensor_2ecpp_106',['Sensor.cpp',['../Sensor_8cpp.html',1,'']]],
+  ['sensor_2eh_107',['Sensor.h',['../Sensor_8h.html',1,'']]],
+  ['set_5fdashboardadmin_108',['set_dashboardAdmin',['../classDashboard.html#a4c1666c15d86e624c793136872ce6d9f',1,'Dashboard']]],
+  ['set_5fdashboardemployer_109',['set_dashboardEmployer',['../classDashboard.html#ae365878c8dcbc1bfcecfcfb80a3e90d5',1,'Dashboard']]],
+  ['set_5flogin_110',['set_login',['../classLogin.html#afe47375ab2be824afeb7cd57533de1ee',1,'Login']]],
+  ['setnumrecord_111',['setNumRecord',['../classUser.html#a88793d84077d27a1ed1e8360959e836b',1,'User']]],
+  ['setuserid_112',['setUserID',['../classUser.html#acd35bf2419cdf87833211d60fbd128c4',1,'User']]],
+  ['setusernif_113',['setUserNIF',['../classUser.html#a67759cd14e0285d36662e7bc1d7f7d42',1,'User']]],
+  ['setuserrole_114',['setUserRole',['../classUser.html#a6663ff27657ceebf6c487ec1844619e4',1,'User']]],
+  ['singledashboard_115',['singleDashboard',['../classDashboard.html#a7939fc35ee3976ba1cd67d6fa8552651',1,'Dashboard']]],
+  ['singlelogin_116',['singleLogin',['../classLogin.html#a9d64d57925de9e9b5a85d10612368983',1,'Login']]],
+  ['stringexception_117',['stringException',['../classstringException.html#ace6ee3348c98b578ce6179250dcbe9eb',1,'stringException::stringException()'],['../classstringException.html',1,'stringException']]]
+];

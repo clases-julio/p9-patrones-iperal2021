@@ -1,0 +1,470 @@
+\hypertarget{classLogin}{}\doxysection{Login Class Reference}
+\label{classLogin}\index{Login@{Login}}
+
+
+{\ttfamily \#include $<$Login.\+h$>$}
+
+
+
+Collaboration diagram for Login\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classLogin__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogin_a4847f3e07e43b540d3339392346f87ff}{Login}} ()
+\item 
+void \mbox{\hyperlink{classLogin_ad42b69f475f98aaa9a25a91ecf6c975d}{go\+\_\+back}} ()
+\item 
+bool \mbox{\hyperlink{classLogin_a32b8dbfa51d655d438e70592c5e00d6d}{go\+\_\+to\+\_\+dashboard}} ()
+\item 
+void \mbox{\hyperlink{classLogin_afe47375ab2be824afeb7cd57533de1ee}{set\+\_\+login}} ()
+\item 
+void \mbox{\hyperlink{classLogin_ad1f2fcf708e074a400e9a0c710f82711}{login}} (\mbox{\hyperlink{classDataBase}{Data\+Base}} $\ast$)
+\item 
+\mbox{\hyperlink{classLogin_adc10a891e16d9255909e64fb82159972}{Login}} (\mbox{\hyperlink{classLogin}{Login}} \&other\+Login)=delete
+\item 
+void \mbox{\hyperlink{classLogin_a71ce2a25e82db412fe16c91856409f32}{operator=}} (const \mbox{\hyperlink{classLogin}{Login}} \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classLogin}{Login}} $\ast$ \mbox{\hyperlink{classLogin_a8be10006b176576b57cfbb2a91876526}{get\+The\+Login}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLogin_abaac8441e6610c422f3c66fd44afe40d}{comprobar\+\_\+user\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em method that calls a database function which verify the credentials If the function return a false, a mesage is printed to show the user that is wrong At the third wrong try the program finishes with a \textquotesingle{}access denied\textquotesingle{} error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogin_a33fe1eb8f56f313b5fa2f922ecd11cf9}{get\+\_\+\+NIF}} ()
+\begin{DoxyCompactList}\small\item\em Method to get the ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogin_a072dee6e6058e64759bef197b32a5ea6}{get\+\_\+\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Method to get the NIF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataBase}{Data\+Base}} $\ast$ \mbox{\hyperlink{classLogin_a296309ab65a0e412f7ee3c34dec051ad}{database}}
+\begin{DoxyCompactList}\small\item\em Variable of the data base type wich save a pointer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLogin_ae90fd22f659384ae29c259552732ea5c}{data\+\_\+valid}}
+\item 
+int \mbox{\hyperlink{classLogin_a3f473cff813836a56664595c150a5050}{intentos}}
+\item 
+int \mbox{\hyperlink{classLogin_ab36c94da06fac87aff56e926b02f3dca}{contador}}
+\item 
+int \mbox{\hyperlink{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}{temp\+\_\+\+ID}}
+\item 
+int \mbox{\hyperlink{classLogin_a8101425656fdb1a8b0114b723d039f5c}{temp\+\_\+\+NIF}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classLogin}{Login}} $\ast$ \mbox{\hyperlink{classLogin_a9d64d57925de9e9b5a85d10612368983}{single\+Login}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Login.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogin_a4847f3e07e43b540d3339392346f87ff}\label{classLogin_a4847f3e07e43b540d3339392346f87ff}} 
+\index{Login@{Login}!Login@{Login}}
+\index{Login@{Login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Login\+::\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{\} \textcolor{comment}{// Login constructor}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLogin_adc10a891e16d9255909e64fb82159972}\label{classLogin_adc10a891e16d9255909e64fb82159972}} 
+\index{Login@{Login}!Login@{Login}}
+\index{Login@{Login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Login\+::\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogin}{Login}} \&}]{other\+Login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogin_abaac8441e6610c422f3c66fd44afe40d}\label{classLogin_abaac8441e6610c422f3c66fd44afe40d}} 
+\index{Login@{Login}!comprobar\_user\_data@{comprobar\_user\_data}}
+\index{comprobar\_user\_data@{comprobar\_user\_data}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{comprobar\_user\_data()}{comprobar\_user\_data()}}
+{\footnotesize\ttfamily void Login\+::comprobar\+\_\+user\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method that calls a database function which verify the credentials If the function return a false, a mesage is printed to show the user that is wrong At the third wrong try the program finishes with a \textquotesingle{}access denied\textquotesingle{} error 
+
+
+
+Definition at line 78 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                 \{}
+\DoxyCodeLine{79     }
+\DoxyCodeLine{80     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{81     \mbox{\hyperlink{classLogin_ae90fd22f659384ae29c259552732ea5c}{data\_valid}} = \mbox{\hyperlink{classLogin_a296309ab65a0e412f7ee3c34dec051ad}{database}}-\/>\mbox{\hyperlink{classDataBase_a95d2b301efc3ca8c2e6f753c462969a7}{validUser}}(\mbox{\hyperlink{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}{temp\_ID}}, \mbox{\hyperlink{classLogin_a8101425656fdb1a8b0114b723d039f5c}{temp\_NIF}});}
+\DoxyCodeLine{82         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classLogin_ae90fd22f659384ae29c259552732ea5c}{data\_valid}}) \{}
+\DoxyCodeLine{83             \textcolor{keywordflow}{throw} \mbox{\hyperlink{classcredentialException}{credentialException}}();}
+\DoxyCodeLine{84         \}}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86     \textcolor{keywordflow}{catch} (\mbox{\hyperlink{classcredentialException}{credentialException}} \&except) \{}
+\DoxyCodeLine{87         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n\(\backslash\)tException: "{}}<< except.what() << endl;}
+\DoxyCodeLine{88         \mbox{\hyperlink{classLogin_ab36c94da06fac87aff56e926b02f3dca}{contador}}++;}
+\DoxyCodeLine{89         system(\textcolor{stringliteral}{"{}sleep 1.5"{}});}
+\DoxyCodeLine{90         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classLogin_ab36c94da06fac87aff56e926b02f3dca}{contador}} != 3) \{}
+\DoxyCodeLine{91             system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{92         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{93             \textcolor{comment}{// at the third try the program finish and denied the access}}
+\DoxyCodeLine{94             cout << \textcolor{stringliteral}{"{}\(\backslash\)u001b[31m\(\backslash\)n\(\backslash\)t\(\backslash\)t\(\backslash\)tAccess denied.\(\backslash\)u001b[0m\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{95             \mbox{\hyperlink{classLogin_ad42b69f475f98aaa9a25a91ecf6c975d}{go\_back}}();}
+\DoxyCodeLine{96         \}}
+\DoxyCodeLine{97     \}}
+\DoxyCodeLine{98 \};}
+
+\end{DoxyCode}
+
+
+References contador, data\+\_\+valid, database, temp\+\_\+\+ID, temp\+\_\+\+NIF, and Data\+Base\+::valid\+User().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLogin_abaac8441e6610c422f3c66fd44afe40d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classLogin_a072dee6e6058e64759bef197b32a5ea6}\label{classLogin_a072dee6e6058e64759bef197b32a5ea6}} 
+\index{Login@{Login}!get\_ID@{get\_ID}}
+\index{get\_ID@{get\_ID}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{get\_ID()}{get\_ID()}}
+{\footnotesize\ttfamily void Login\+::get\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method to get the NIF. 
+
+
+
+Definition at line 39 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                    \{}
+\DoxyCodeLine{40     \textcolor{keywordtype}{string} id;}
+\DoxyCodeLine{41     cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tID: "{}};}
+\DoxyCodeLine{42     cin >> id;}
+\DoxyCodeLine{43     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{44         \mbox{\hyperlink{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}{temp\_ID}} = stoi(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{45     \}}
+\DoxyCodeLine{46     \textcolor{keywordflow}{catch} (std::invalid\_argument) \{}
+\DoxyCodeLine{47         cout << \textcolor{stringliteral}{"{}Exception: chars and string are invalid"{}} << endl;}
+\DoxyCodeLine{48     \}}
+\DoxyCodeLine{49     \textcolor{keywordflow}{catch} (std::out\_of\_range) \{}
+\DoxyCodeLine{50         cout << \textcolor{stringliteral}{"{}Exception: ID lenght out of range"{}} << endl;}
+\DoxyCodeLine{51         system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{52     \};}
+\DoxyCodeLine{53 \};}
+
+\end{DoxyCode}
+
+
+References temp\+\_\+\+ID.
+
+\mbox{\Hypertarget{classLogin_a33fe1eb8f56f313b5fa2f922ecd11cf9}\label{classLogin_a33fe1eb8f56f313b5fa2f922ecd11cf9}} 
+\index{Login@{Login}!get\_NIF@{get\_NIF}}
+\index{get\_NIF@{get\_NIF}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{get\_NIF()}{get\_NIF()}}
+{\footnotesize\ttfamily void Login\+::get\+\_\+\+NIF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method to get the ID. 
+
+
+
+Definition at line 55 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                     \{}
+\DoxyCodeLine{56     \textcolor{keywordtype}{string} nif;}
+\DoxyCodeLine{57     cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tNIF: "{}};}
+\DoxyCodeLine{58     cin >> nif;}
+\DoxyCodeLine{59     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{60         \mbox{\hyperlink{classLogin_a8101425656fdb1a8b0114b723d039f5c}{temp\_NIF}} = stoi(nif);}
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62     \textcolor{keywordflow}{catch} (std::invalid\_argument) \{}
+\DoxyCodeLine{63         cout << \textcolor{stringliteral}{"{}Exception: chars and string are invalid"{}} << endl;}
+\DoxyCodeLine{64         system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{65     \}}
+\DoxyCodeLine{66     \textcolor{keywordflow}{catch} (std::out\_of\_range) \{}
+\DoxyCodeLine{67         cout << \textcolor{stringliteral}{"{}Exception: NIF lenght out of range"{}} << endl;}
+\DoxyCodeLine{68         system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{69         }
+\DoxyCodeLine{70     \}}
+\DoxyCodeLine{71 \};}
+
+\end{DoxyCode}
+
+
+References temp\+\_\+\+NIF.
+
+\mbox{\Hypertarget{classLogin_a8be10006b176576b57cfbb2a91876526}\label{classLogin_a8be10006b176576b57cfbb2a91876526}} 
+\index{Login@{Login}!getTheLogin@{getTheLogin}}
+\index{getTheLogin@{getTheLogin}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{getTheLogin()}{getTheLogin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogin}{Login}} $\ast$ Login\+::get\+The\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 151 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151                            \{}
+\DoxyCodeLine{152   \textcolor{keywordflow}{if} (\mbox{\hyperlink{classLogin_a9d64d57925de9e9b5a85d10612368983}{singleLogin}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{153     \mbox{\hyperlink{classLogin_a9d64d57925de9e9b5a85d10612368983}{singleLogin}} = \textcolor{keyword}{new} \mbox{\hyperlink{classLogin_a4847f3e07e43b540d3339392346f87ff}{Login}} ();}
+\DoxyCodeLine{154   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{155     cout << \textcolor{stringliteral}{"{}Error: trying to get another instance of a Ball singleton class!\(\backslash\)n"{}};}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157   \textcolor{keywordflow}{return} \mbox{\hyperlink{classLogin_a9d64d57925de9e9b5a85d10612368983}{singleLogin}};}
+\DoxyCodeLine{158 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classLogin_a8be10006b176576b57cfbb2a91876526_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classLogin_ad42b69f475f98aaa9a25a91ecf6c975d}\label{classLogin_ad42b69f475f98aaa9a25a91ecf6c975d}} 
+\index{Login@{Login}!go\_back@{go\_back}}
+\index{go\_back@{go\_back}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{go\_back()}{go\_back()}}
+{\footnotesize\ttfamily void Login\+::go\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109                     \{}
+\DoxyCodeLine{110     exit(0);}
+\DoxyCodeLine{111 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLogin_a32b8dbfa51d655d438e70592c5e00d6d}\label{classLogin_a32b8dbfa51d655d438e70592c5e00d6d}} 
+\index{Login@{Login}!go\_to\_dashboard@{go\_to\_dashboard}}
+\index{go\_to\_dashboard@{go\_to\_dashboard}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{go\_to\_dashboard()}{go\_to\_dashboard()}}
+{\footnotesize\ttfamily bool Login\+::go\+\_\+to\+\_\+dashboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                             \{}
+\DoxyCodeLine{101     }
+\DoxyCodeLine{102     system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{103     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classLogin_a296309ab65a0e412f7ee3c34dec051ad}{database}}-\/>\mbox{\hyperlink{classDataBase_a1c62878aea33ed7eaa6fcedbf8c8d92e}{isAdmin}}) \{}
+\DoxyCodeLine{104         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{105     \}}
+\DoxyCodeLine{106     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{107 \};}
+
+\end{DoxyCode}
+
+
+References database, and Data\+Base\+::is\+Admin.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classLogin_a32b8dbfa51d655d438e70592c5e00d6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classLogin_ad1f2fcf708e074a400e9a0c710f82711}\label{classLogin_ad1f2fcf708e074a400e9a0c710f82711}} 
+\index{Login@{Login}!login@{login}}
+\index{login@{login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily void Login\+::login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDataBase}{Data\+Base}} $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 141 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141                                 \{}
+\DoxyCodeLine{142     \mbox{\hyperlink{classLogin_a296309ab65a0e412f7ee3c34dec051ad}{database}} = data;}
+\DoxyCodeLine{143     system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{144     \mbox{\hyperlink{classLogin_afe47375ab2be824afeb7cd57533de1ee}{set\_login}}();}
+\DoxyCodeLine{145     \mbox{\hyperlink{classLogin_a32b8dbfa51d655d438e70592c5e00d6d}{go\_to\_dashboard}}();}
+\DoxyCodeLine{146     }
+\DoxyCodeLine{147 \};}
+
+\end{DoxyCode}
+
+
+References database.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classLogin_ad1f2fcf708e074a400e9a0c710f82711_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classLogin_a71ce2a25e82db412fe16c91856409f32}\label{classLogin_a71ce2a25e82db412fe16c91856409f32}} 
+\index{Login@{Login}!operator=@{operator=}}
+\index{operator=@{operator=}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Login\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLogin}{Login}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classLogin_afe47375ab2be824afeb7cd57533de1ee}\label{classLogin_afe47375ab2be824afeb7cd57533de1ee}} 
+\index{Login@{Login}!set\_login@{set\_login}}
+\index{set\_login@{set\_login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{set\_login()}{set\_login()}}
+{\footnotesize\ttfamily void Login\+::set\+\_\+login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 115 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{115                       \{}
+\DoxyCodeLine{116     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{117         \textcolor{comment}{// Title}}
+\DoxyCodeLine{118         cout << \textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t\(\backslash\)t-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{119         cout << \textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t\(\backslash\)t\(\backslash\)x1b[47m\(\backslash\)x1b[30mLOGIN DE USUARIO\(\backslash\)x1b[0m"{}} << endl;}
+\DoxyCodeLine{120         cout << \textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)t\(\backslash\)t-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122         \textcolor{comment}{// The credentials are asked and are validated}}
+\DoxyCodeLine{123         \mbox{\hyperlink{classLogin_a072dee6e6058e64759bef197b32a5ea6}{get\_ID}}();}
+\DoxyCodeLine{124         \mbox{\hyperlink{classLogin_a33fe1eb8f56f313b5fa2f922ecd11cf9}{get\_NIF}}();}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126         \mbox{\hyperlink{classLogin_abaac8441e6610c422f3c66fd44afe40d}{comprobar\_user\_data}}();}
+\DoxyCodeLine{127         }
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129         \textcolor{comment}{// If the credentials are correct the user goes to the dashboard}}
+\DoxyCodeLine{130         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classLogin_ae90fd22f659384ae29c259552732ea5c}{data\_valid}} == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{131             \mbox{\hyperlink{classLogin_a296309ab65a0e412f7ee3c34dec051ad}{database}}-\/>\mbox{\hyperlink{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}{actualID}} = \mbox{\hyperlink{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}{temp\_ID}};}
+\DoxyCodeLine{132             cout << \mbox{\hyperlink{classLogin_a296309ab65a0e412f7ee3c34dec051ad}{database}}-\/>\mbox{\hyperlink{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}{actualID}} << endl;}
+\DoxyCodeLine{133             cout << \textcolor{stringliteral}{"{}\(\backslash\)u001b[32m\(\backslash\)n\(\backslash\)n\(\backslash\)t\(\backslash\)t\(\backslash\)tBienvenido al sistema\(\backslash\)u001b[0m"{}} << endl;}
+\DoxyCodeLine{134             \mbox{\hyperlink{classLogin_ab36c94da06fac87aff56e926b02f3dca}{contador}} = 0;}
+\DoxyCodeLine{135             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{136         \} }
+\DoxyCodeLine{137     \}   }
+\DoxyCodeLine{138 \};}
+
+\end{DoxyCode}
+
+
+References Data\+Base\+::actual\+ID, contador, data\+\_\+valid, database, and temp\+\_\+\+ID.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLogin_ab36c94da06fac87aff56e926b02f3dca}\label{classLogin_ab36c94da06fac87aff56e926b02f3dca}} 
+\index{Login@{Login}!contador@{contador}}
+\index{contador@{contador}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{contador}{contador}}
+{\footnotesize\ttfamily int Login\+::contador\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 57 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_ae90fd22f659384ae29c259552732ea5c}\label{classLogin_ae90fd22f659384ae29c259552732ea5c}} 
+\index{Login@{Login}!data\_valid@{data\_valid}}
+\index{data\_valid@{data\_valid}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{data\_valid}{data\_valid}}
+{\footnotesize\ttfamily bool Login\+::data\+\_\+valid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_a296309ab65a0e412f7ee3c34dec051ad}\label{classLogin_a296309ab65a0e412f7ee3c34dec051ad}} 
+\index{Login@{Login}!database@{database}}
+\index{database@{database}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataBase}{Data\+Base}}$\ast$ Login\+::database\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable of the data base type wich save a pointer. 
+
+
+
+Definition at line 53 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_a3f473cff813836a56664595c150a5050}\label{classLogin_a3f473cff813836a56664595c150a5050}} 
+\index{Login@{Login}!intentos@{intentos}}
+\index{intentos@{intentos}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{intentos}{intentos}}
+{\footnotesize\ttfamily int Login\+::intentos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_a9d64d57925de9e9b5a85d10612368983}\label{classLogin_a9d64d57925de9e9b5a85d10612368983}} 
+\index{Login@{Login}!singleLogin@{singleLogin}}
+\index{singleLogin@{singleLogin}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{singleLogin}{singleLogin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogin}{Login}} $\ast$ Login\+::single\+Login = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 60 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}\label{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}} 
+\index{Login@{Login}!temp\_ID@{temp\_ID}}
+\index{temp\_ID@{temp\_ID}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{temp\_ID}{temp\_ID}}
+{\footnotesize\ttfamily int Login\+::temp\+\_\+\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 58 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_a8101425656fdb1a8b0114b723d039f5c}\label{classLogin_a8101425656fdb1a8b0114b723d039f5c}} 
+\index{Login@{Login}!temp\_NIF@{temp\_NIF}}
+\index{temp\_NIF@{temp\_NIF}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{temp\_NIF}{temp\_NIF}}
+{\footnotesize\ttfamily int Login\+::temp\+\_\+\+NIF\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 59 of file Login.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Login_8h}{Login.\+h}}\item 
+src/\mbox{\hyperlink{Login_8cpp}{Login.\+cpp}}\end{DoxyCompactItemize}

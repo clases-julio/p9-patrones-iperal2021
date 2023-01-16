@@ -1,0 +1,10 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,60,159"/>
+<area shape="rect" id="node2" href="$classDashboard.html#af977427f89504aa2b25a03902d40018a" title=" " alt="" coords="131,5,299,32"/>
+<area shape="rect" id="node3" href="$classDashboard.html#aa5f2c0d256f66348de96674541b12cc7" title=" " alt="" coords="108,56,323,83"/>
+<area shape="rect" id="node4" href="$classLogin.html#a8be10006b176576b57cfbb2a91876526" title=" " alt="" coords="143,107,288,133"/>
+<area shape="rect" id="node5" href="$classLogin.html#a32b8dbfa51d655d438e70592c5e00d6d" title=" " alt="" coords="127,157,303,184"/>
+<area shape="rect" id="node6" href="$classLogin.html#ad1f2fcf708e074a400e9a0c710f82711" title=" " alt="" coords="167,208,264,235"/>
+<area shape="rect" id="node7" href="$classDataBase.html#acc28420d9a913167e68b68f361666155" title="Method to read the current users from the file users.dat." alt="" coords="136,259,295,285"/>
+<area shape="rect" id="node8" href="$classUser.html#a2442bd0bf2b21139c350edbb1e6cff5b" title=" " alt="" coords="371,259,528,285"/>
+</map>

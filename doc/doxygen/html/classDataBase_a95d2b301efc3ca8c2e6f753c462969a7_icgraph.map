@@ -1,0 +1,4 @@
+<map id="DataBase::validUser" name="DataBase::validUser">
+<area shape="rect" id="node1" title="Validates the users credentials that are stored in the database." alt="" coords="260,5,415,32"/>
+<area shape="rect" id="node2" href="$classLogin.html#abaac8441e6610c422f3c66fd44afe40d" title="method that calls a database function which verify the credentials If the function return a false,..." alt="" coords="5,5,212,32"/>
+</map>

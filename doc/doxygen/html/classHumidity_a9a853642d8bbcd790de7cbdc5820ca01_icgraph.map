@@ -1,0 +1,4 @@
+<map id="Humidity::getData" name="Humidity::getData">
+<area shape="rect" id="node1" title="Get the Data object." alt="" coords="235,5,376,32"/>
+<area shape="rect" id="node2" href="$classDashboard.html#aef530a74e8f8a4ef5f6a24a5da8c2784" title="menu that shows the different sensors. For each instruction a sensor is shown" alt="" coords="5,5,187,32"/>
+</map>

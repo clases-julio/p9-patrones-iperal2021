@@ -1,0 +1,5 @@
+<map id="Dashboard::eraseUserDashboard" name="Dashboard::eraseUserDashboard">
+<area shape="rect" id="node1" title="Method that allow the admin to erase the users." alt="" coords="5,31,241,57"/>
+<area shape="rect" id="node2" href="$classDataBase.html#af38de436cb7a0f9a6cc1c245fe68caac" title="method to erase users" alt="" coords="289,5,448,32"/>
+<area shape="rect" id="node3" href="$classDataBase.html#af6ab6c26576ea672c207d8553ade271f" title="list of the current usersd" alt="" coords="297,56,441,83"/>
+</map>

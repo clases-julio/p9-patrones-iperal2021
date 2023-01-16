@@ -1,0 +1,13 @@
+<map id="include/Sensor.h" name="include/Sensor.h">
+<area shape="rect" id="node1" title=" " alt="" coords="460,5,589,32"/>
+<area shape="rect" id="node2" href="$AirQuality_8h.html" title="Air Quality sensor." alt="" coords="55,80,203,107"/>
+<area shape="rect" id="node3" href="$AirQuality_8cpp.html" title=" " alt="" coords="5,155,140,181"/>
+<area shape="rect" id="node4" href="$Dashboard_8cpp.html" title=" " alt="" coords="232,155,375,181"/>
+<area shape="rect" id="node5" href="$Brightness_8h.html" title="Luminosity sensor." alt="" coords="278,80,433,107"/>
+<area shape="rect" id="node6" href="$Brightness_8cpp.html" title=" " alt="" coords="399,155,541,181"/>
+<area shape="rect" id="node7" href="$Humidity_8h.html" title="Humidity sensor." alt="" coords="508,80,651,107"/>
+<area shape="rect" id="node8" href="$Humidity_8cpp.html" title=" " alt="" coords="597,155,727,181"/>
+<area shape="rect" id="node9" href="$Temperature_8h.html" title="Temperature sensor." alt="" coords="727,80,893,107"/>
+<area shape="rect" id="node10" href="$Temperature_8cpp.html" title=" " alt="" coords="758,155,913,181"/>
+<area shape="rect" id="node11" href="$Sensor_8cpp.html" title=" " alt="" coords="969,80,1085,107"/>
+</map>

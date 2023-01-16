@@ -1,0 +1,4 @@
+<map id="DataBase::writeUsers" name="DataBase::writeUsers">
+<area shape="rect" id="node1" title="Methot used for write in the file users.dat the users at the end of the program." alt="" coords="192,5,355,32"/>
+<area shape="rect" id="node2" href="$classDashboard.html#ac1c0e69c932b20c1979636f8a5bab13e" title="Function to exit the program when the option is selected." alt="" coords="5,5,144,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="DataBase::userList" name="DataBase::userList">
+<area shape="rect" id="node1" title="list of the current usersd" alt="" coords="289,31,433,57"/>
+<area shape="rect" id="node2" href="$classDashboard.html#a3fb97b5c6b9504a2e3b5fed267511049" title="Function that allows the admin to add new users." alt="" coords="11,5,235,32"/>
+<area shape="rect" id="node3" href="$classDashboard.html#ad5eb81283274fd24e22363cc917bc023" title="Method that allow the admin to erase the users." alt="" coords="5,56,241,83"/>
+</map>

@@ -1,0 +1,112 @@
+\hypertarget{classAirQuality}{}\doxysection{Air\+Quality Class Reference}
+\label{classAirQuality}\index{AirQuality@{AirQuality}}
+
+
+{\ttfamily \#include $<$Air\+Quality.\+h$>$}
+
+
+
+Inheritance diagram for Air\+Quality\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classAirQuality__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Air\+Quality\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classAirQuality__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAirQuality_ab2407a74ee37a9af74c677f22095f624}{Air\+Quality}} ()
+\item 
+void \mbox{\hyperlink{classAirQuality_aa15f722abb7df1519bfbd2c3d1a2ec56}{get\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 20 of file Air\+Quality.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAirQuality_ab2407a74ee37a9af74c677f22095f624}\label{classAirQuality_ab2407a74ee37a9af74c677f22095f624}} 
+\index{AirQuality@{AirQuality}!AirQuality@{AirQuality}}
+\index{AirQuality@{AirQuality}!AirQuality@{AirQuality}}
+\doxysubsubsection{\texorpdfstring{AirQuality()}{AirQuality()}}
+{\footnotesize\ttfamily Air\+Quality\+::\+Air\+Quality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Air\+Quality.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAirQuality_aa15f722abb7df1519bfbd2c3d1a2ec56}\label{classAirQuality_aa15f722abb7df1519bfbd2c3d1a2ec56}} 
+\index{AirQuality@{AirQuality}!getData@{getData}}
+\index{getData@{getData}!AirQuality@{AirQuality}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily void Air\+Quality\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file Air\+Quality.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                          \{}
+\DoxyCodeLine{12     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{13         \textcolor{keywordtype}{int} random = this-\/>\mbox{\hyperlink{classSensor_ae6d56a02f17f42d2687cb600e1a6f782}{randomData}}();}
+\DoxyCodeLine{14         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tAir quality:\(\backslash\)t\(\backslash\)t"{}} << (random + 30) << \textcolor{stringliteral}{"{} ppm\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{15         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tPara volver atrás introduzca 0 + ENTER"{}} << endl;}
+\DoxyCodeLine{16         cin >> this-\/>\mbox{\hyperlink{classSensor_a916bc79911fab1db4e27bcb0998c58a3}{back\_1}};}
+\DoxyCodeLine{17         \textcolor{keywordflow}{switch} (this-\/>back\_1) \{}
+\DoxyCodeLine{18         }
+\DoxyCodeLine{19         \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{20             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{21             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{22         }
+\DoxyCodeLine{23         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{24             }
+\DoxyCodeLine{25             cout << \textcolor{stringliteral}{"{}Orden incorrecta"{}} << endl;}
+\DoxyCodeLine{26             system(\textcolor{stringliteral}{"{}sleep 1"{}});}
+\DoxyCodeLine{27             this-\/>\mbox{\hyperlink{classSensor_a7857c854b42e63333cd38c47aaf36e60}{cabeceraSensor}}();}
+\DoxyCodeLine{28             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{29         \}}
+\DoxyCodeLine{30     \}}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+
+
+References back\+\_\+1.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAirQuality_aa15f722abb7df1519bfbd2c3d1a2ec56_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{AirQuality_8h}{Air\+Quality.\+h}}\item 
+src/\mbox{\hyperlink{AirQuality_8cpp}{Air\+Quality.\+cpp}}\end{DoxyCompactItemize}

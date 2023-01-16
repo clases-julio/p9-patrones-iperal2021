@@ -1,0 +1,8 @@
+<map id="Dashboard::goToSensors" name="Dashboard::goToSensors">
+<area shape="rect" id="node1" title="menu that shows the different sensors. For each instruction a sensor is shown" alt="" coords="5,107,187,133"/>
+<area shape="rect" id="node2" href="$classAirQuality.html#aa15f722abb7df1519bfbd2c3d1a2ec56" title=" " alt="" coords="243,5,390,32"/>
+<area shape="rect" id="node3" href="$classBrightness.html#a3583326e8c080021524d071cffda35b8" title=" " alt="" coords="241,56,392,83"/>
+<area shape="rect" id="node4" href="$classHumidity.html#a9a853642d8bbcd790de7cbdc5820ca01" title="Get the Data object." alt="" coords="246,107,387,133"/>
+<area shape="rect" id="node5" href="$classTemperature.html#a5f4320f095ac75111cec07a32bef5542" title="Get the object data." alt="" coords="235,157,399,184"/>
+<area shape="rect" id="node6" href="$classSensor.html#a5dc59fbc34a1432538d0af51d0c93486" title="Get the Data of the object." alt="" coords="253,208,380,235"/>
+</map>

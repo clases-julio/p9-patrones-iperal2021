@@ -1,0 +1,70 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include \char`\"{}Data\+Base.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Login.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Dashboard.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19            \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{classDataBase}{DataBase}}* ptrbase;}
+\DoxyCodeLine{21     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{22         ptrbase = \textcolor{keyword}{new} \mbox{\hyperlink{classDataBase}{DataBase}}();}
+\DoxyCodeLine{23     \} \textcolor{keywordflow}{catch} (bad\_alloc \&except) \{}
+\DoxyCodeLine{24     cerr << \textcolor{stringliteral}{"{}Exception!: "{}} << except.what() << endl;}
+\DoxyCodeLine{25     \}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     ptrbase-\/>\mbox{\hyperlink{classDataBase_acc28420d9a913167e68b68f361666155}{readUsers}}();}
+\DoxyCodeLine{28     \textcolor{comment}{// a login and a dashboard objects are created}}
+\DoxyCodeLine{29     \mbox{\hyperlink{classLogin}{Login}}* login = \mbox{\hyperlink{classLogin_a8be10006b176576b57cfbb2a91876526}{Login::getTheLogin}} ();}
+\DoxyCodeLine{30     \mbox{\hyperlink{classDashboard}{Dashboard}}* dashboard = \mbox{\hyperlink{classDashboard_aa5f2c0d256f66348de96674541b12cc7}{Dashboard::getTheDashboard}} ();}
+\DoxyCodeLine{31     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{32        }
+\DoxyCodeLine{33         system(\textcolor{stringliteral}{"{}clear"{}}); \textcolor{comment}{// used in lots of functions to clear the screen}}
+\DoxyCodeLine{34         login-\/>\mbox{\hyperlink{classLogin_ad1f2fcf708e074a400e9a0c710f82711}{login}}(ptrbase); \textcolor{comment}{// initialize the login screen}}
+\DoxyCodeLine{35         dashboard-\/>\mbox{\hyperlink{classDashboard_af977427f89504aa2b25a03902d40018a}{dashboard}}(ptrbase, login-\/>\mbox{\hyperlink{classLogin_a32b8dbfa51d655d438e70592c5e00d6d}{go\_to\_dashboard}}());}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}
+
+
+References Dashboard\+::dashboard(), Dashboard\+::get\+The\+Dashboard(), Login\+::get\+The\+Login(), Login\+::go\+\_\+to\+\_\+dashboard(), Login\+::login(), and Data\+Base\+::read\+Users().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

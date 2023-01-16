@@ -1,0 +1,7 @@
+<map id="Sensor" name="Sensor">
+<area shape="rect" id="node1" title=" " alt="" coords="193,5,343,141"/>
+<area shape="rect" id="node2" href="$classAirQuality.html" title=" " alt="" coords="5,189,117,281"/>
+<area shape="rect" id="node3" href="$classBrightness.html" title=" " alt="" coords="142,189,258,281"/>
+<area shape="rect" id="node4" href="$classHumidity.html" title=" " alt="" coords="283,189,389,281"/>
+<area shape="rect" id="node5" href="$classTemperature.html" title=" " alt="" coords="414,189,543,281"/>
+</map>

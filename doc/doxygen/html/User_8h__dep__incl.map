@@ -1,0 +1,13 @@
+<map id="include/User.h" name="include/User.h">
+<area shape="rect" id="node1" title="User object&#39;s file." alt="" coords="450,5,565,32"/>
+<area shape="rect" id="node2" href="$Admin_8h.html" title=" " alt="" coords="171,80,297,107"/>
+<area shape="rect" id="node3" href="$DataBase_8h.html" title="DataBase implementation and validate users&#39;s methods." alt="" coords="321,80,469,107"/>
+<area shape="rect" id="node9" href="$DataBase_8cpp.html" title=" " alt="" coords="461,155,596,181"/>
+<area shape="rect" id="node10" href="$Employer_8h.html" title="Object employer." alt="" coords="545,80,691,107"/>
+<area shape="rect" id="node11" href="$User_8cpp.html" title=" " alt="" coords="716,80,819,107"/>
+<area shape="rect" id="node4" href="$Dashboard_8h.html" title="main menu" alt="" coords="181,155,335,181"/>
+<area shape="rect" id="node5" href="$Dashboard_8cpp.html" title=" " alt="" coords="5,229,148,256"/>
+<area shape="rect" id="node6" href="$Login_8cpp.html" title=" " alt="" coords="319,229,426,256"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title=" " alt="" coords="451,229,556,256"/>
+<area shape="rect" id="node8" href="$Security_8cpp.html" title=" " alt="" coords="173,229,295,256"/>
+</map>

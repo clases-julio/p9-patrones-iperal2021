@@ -1,0 +1,467 @@
+\hypertarget{classDataBase}{}\doxysection{Data\+Base Class Reference}
+\label{classDataBase}\index{DataBase@{DataBase}}
+
+
+{\ttfamily \#include $<$Data\+Base.\+h$>$}
+
+
+
+Collaboration diagram for Data\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classDataBase__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataBase_a9fbd4936704ce4de391f92e92a072074}{Data\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Data Base object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataBase_af6ab6c26576ea672c207d8553ade271f}{user\+List}} ()
+\begin{DoxyCompactList}\small\item\em list of the current usersd \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataBase_acc28420d9a913167e68b68f361666155}{read\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Method to read the current users from the file users.\+dat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataBase_a58c062b3191ce56ee860af493f651818}{write\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Methot used for write in the file users.\+dat the users at the end of the program. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDataBase_a95d2b301efc3ca8c2e6f753c462969a7}{valid\+User}} (int, int)
+\begin{DoxyCompactList}\small\item\em Validates the users credentials that are stored in the database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataBase_af38de436cb7a0f9a6cc1c245fe68caac}{erase\+User}} (int)
+\begin{DoxyCompactList}\small\item\em method to erase users \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataBase_a3e4d935dada84092c2b3c911f7e679f5}{add\+User}} ()
+\begin{DoxyCompactList}\small\item\em Method to add new users. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classDataBase_a57dbd827ca7fcbf52f5a37b3d7d282bf}{valided}}
+\begin{DoxyCompactList}\small\item\em bool to return the \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDataBase_ac892c4a1e4ce36b70317cae110b9a526}{nuevo\+ID}}
+\item 
+int \mbox{\hyperlink{classDataBase_aa4c9dbbea8e911eab6e59ef7eca65b39}{nuevo\+NIF}}
+\item 
+int \mbox{\hyperlink{classDataBase_a3cb0ff9744020f3e72442d61723bcacf}{admin}}
+\item 
+bool \mbox{\hyperlink{classDataBase_a1c62878aea33ed7eaa6fcedbf8c8d92e}{is\+Admin}}
+\item 
+int \mbox{\hyperlink{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}{actual\+ID}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classUser}{User}} that is used to login. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::set$<$ \mbox{\hyperlink{classUser}{User}} $>$ \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vector\+User}}
+\begin{DoxyCompactList}\small\item\em Users storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 22 of file Data\+Base.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataBase_a9fbd4936704ce4de391f92e92a072074}\label{classDataBase_a9fbd4936704ce4de391f92e92a072074}} 
+\index{DataBase@{DataBase}!DataBase@{DataBase}}
+\index{DataBase@{DataBase}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{DataBase()}{DataBase()}}
+{\footnotesize\ttfamily Data\+Base\+::\+Data\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new Data Base object. 
+
+
+
+Definition at line 25 of file Data\+Base.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                    \{ }
+\DoxyCodeLine{26     \textcolor{comment}{/*User* user1 = new User(1111, 12345678, 0);}}
+\DoxyCodeLine{27 \textcolor{comment}{    User* user2 = new User(2222, 23456789, 0);}}
+\DoxyCodeLine{28 \textcolor{comment}{    User* user3 = new User(3333, 34567890, 0);}}
+\DoxyCodeLine{29 \textcolor{comment}{    User* user4 = new User(1212, 12121212, 1);}}
+\DoxyCodeLine{30 \textcolor{comment}{    vectorUser.insert(*user1);}}
+\DoxyCodeLine{31 \textcolor{comment}{    vectorUser.insert(*user2);}}
+\DoxyCodeLine{32 \textcolor{comment}{    vectorUser.insert(*user3);}}
+\DoxyCodeLine{33 \textcolor{comment}{    vectorUser.insert(*user4);*/}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataBase_a3e4d935dada84092c2b3c911f7e679f5}\label{classDataBase_a3e4d935dada84092c2b3c911f7e679f5}} 
+\index{DataBase@{DataBase}!addUser@{addUser}}
+\index{addUser@{addUser}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void Data\+Base\+::add\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to add new users. 
+
+
+
+Definition at line 73 of file Data\+Base.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                        \{}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \textcolor{keywordflow}{for} (\mbox{\hyperlink{classUser}{User}} u : \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vectorUser}}) \{}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         \textcolor{keywordflow}{if} (u.getUserID() == \mbox{\hyperlink{classDataBase_ac892c4a1e4ce36b70317cae110b9a526}{nuevoID}} || u.getUserNIF() == \mbox{\hyperlink{classDataBase_aa4c9dbbea8e911eab6e59ef7eca65b39}{nuevoNIF}}) \{}
+\DoxyCodeLine{78             }
+\DoxyCodeLine{79             cout << \textcolor{stringliteral}{"{}ID o NIF ya existentes"{}} << endl;}
+\DoxyCodeLine{80             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{81         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{82             \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vectorUser}}.insert(\mbox{\hyperlink{classUser}{User}}(\mbox{\hyperlink{classDataBase_aa4c9dbbea8e911eab6e59ef7eca65b39}{nuevoNIF}}, \mbox{\hyperlink{classDataBase_ac892c4a1e4ce36b70317cae110b9a526}{nuevoID}}, \mbox{\hyperlink{classDataBase_a3cb0ff9744020f3e72442d61723bcacf}{admin}}));}
+\DoxyCodeLine{83         \}}
+\DoxyCodeLine{84     \}}
+\DoxyCodeLine{85 \}}
+
+\end{DoxyCode}
+
+
+References admin, nuevo\+ID, and nuevo\+NIF.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDataBase_a3e4d935dada84092c2b3c911f7e679f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDataBase_af38de436cb7a0f9a6cc1c245fe68caac}\label{classDataBase_af38de436cb7a0f9a6cc1c245fe68caac}} 
+\index{DataBase@{DataBase}!eraseUser@{eraseUser}}
+\index{eraseUser@{eraseUser}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{eraseUser()}{eraseUser()}}
+{\footnotesize\ttfamily void Data\+Base\+::erase\+User (\begin{DoxyParamCaption}\item[{int}]{posicion }\end{DoxyParamCaption})}
+
+
+
+method to erase users 
+
+
+
+Definition at line 63 of file Data\+Base.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                      \{}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordflow}{for} (\mbox{\hyperlink{classUser}{User}} u : \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vectorUser}}) \{}
+\DoxyCodeLine{66         \textcolor{keywordflow}{if} (posicion == u.getUserID() ) \{}
+\DoxyCodeLine{67             \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vectorUser}}.erase(u);}
+\DoxyCodeLine{68             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{69         \} }
+\DoxyCodeLine{70     \}  }
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDataBase_af38de436cb7a0f9a6cc1c245fe68caac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDataBase_acc28420d9a913167e68b68f361666155}\label{classDataBase_acc28420d9a913167e68b68f361666155}} 
+\index{DataBase@{DataBase}!readUsers@{readUsers}}
+\index{readUsers@{readUsers}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{readUsers()}{readUsers()}}
+{\footnotesize\ttfamily void Data\+Base\+::read\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to read the current users from the file users.\+dat. 
+
+
+
+Definition at line 88 of file Data\+Base.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{88                          \{}
+\DoxyCodeLine{89     ifstream inUsersFile (\textcolor{stringliteral}{"{}./resources/users.dat"{}}, ios::in | ios::binary);}
+\DoxyCodeLine{90     }
+\DoxyCodeLine{91     }
+\DoxyCodeLine{92     \textcolor{keywordflow}{if} (!inUsersFile) \{ \textcolor{comment}{// file couldn't be opened}}
+\DoxyCodeLine{93         cerr << \textcolor{stringliteral}{"{}File could not be opened"{}} << endl;}
+\DoxyCodeLine{94         exit (1);}
+\DoxyCodeLine{95     \}}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     \mbox{\hyperlink{classUser}{User}} user;}
+\DoxyCodeLine{98     }
+\DoxyCodeLine{99     inUsersFile.read (\textcolor{keyword}{reinterpret\_cast <}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(\&user), \textcolor{keyword}{sizeof} (\mbox{\hyperlink{classUser}{User}}));}
+\DoxyCodeLine{100     }
+\DoxyCodeLine{101     \textcolor{keywordflow}{while} (inUsersFile \&\& !inUsersFile.eof()) \{}
+\DoxyCodeLine{102         \textcolor{keywordflow}{if} (user.\mbox{\hyperlink{classUser_a2442bd0bf2b21139c350edbb1e6cff5b}{getNumRecord}}() != 0) \{}
+\DoxyCodeLine{103             \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vectorUser}}.insert (user);}
+\DoxyCodeLine{104         \}}
+\DoxyCodeLine{105         inUsersFile.read (\textcolor{keyword}{reinterpret\_cast <}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(\&user), \textcolor{keyword}{sizeof} (\mbox{\hyperlink{classUser}{User}}));}
+\DoxyCodeLine{106     \}}
+\DoxyCodeLine{107     }
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+
+
+References User\+::get\+Num\+Record().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDataBase_acc28420d9a913167e68b68f361666155_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classDataBase_acc28420d9a913167e68b68f361666155_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDataBase_af6ab6c26576ea672c207d8553ade271f}\label{classDataBase_af6ab6c26576ea672c207d8553ade271f}} 
+\index{DataBase@{DataBase}!userList@{userList}}
+\index{userList@{userList}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{userList()}{userList()}}
+{\footnotesize\ttfamily void Data\+Base\+::user\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+list of the current usersd 
+
+
+
+Definition at line 136 of file Data\+Base.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136                         \{}
+\DoxyCodeLine{137     \textcolor{keywordtype}{int} posicion = 1;}
+\DoxyCodeLine{138     \textcolor{keywordflow}{for} (\mbox{\hyperlink{classUser}{User}} u : \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vectorUser}}) \{}
+\DoxyCodeLine{139         cout << \textcolor{stringliteral}{"{}\(\backslash\)t"{}} << posicion << \textcolor{stringliteral}{"{} -\/\(\backslash\)t"{}} << u.getUserID() << \textcolor{stringliteral}{"{}\(\backslash\)t"{}} << u.getUserNIF() << endl;}
+\DoxyCodeLine{140         posicion += 1;}
+\DoxyCodeLine{141     \}}
+\DoxyCodeLine{142 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDataBase_af6ab6c26576ea672c207d8553ade271f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDataBase_a95d2b301efc3ca8c2e6f753c462969a7}\label{classDataBase_a95d2b301efc3ca8c2e6f753c462969a7}} 
+\index{DataBase@{DataBase}!validUser@{validUser}}
+\index{validUser@{validUser}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{validUser()}{validUser()}}
+{\footnotesize\ttfamily bool Data\+Base\+::valid\+User (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{nif }\end{DoxyParamCaption})}
+
+
+
+Validates the users credentials that are stored in the database. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file Data\+Base.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                         \{}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{comment}{/*  For each user in the list the atributes ID and NIF are compared whit }}
+\DoxyCodeLine{42 \textcolor{comment}{        the ones introducted by the user from the login*/}}
+\DoxyCodeLine{43     \textcolor{keywordflow}{for} (\mbox{\hyperlink{classUser}{User}} u : \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vectorUser}}) \{}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45         \textcolor{keywordflow}{if} (u.getUserID() == \textcolor{keywordtype}{id} \&\& u.getUserNIF() == nif) \{}
+\DoxyCodeLine{46             \textcolor{comment}{// when the correct user is found the loop is over}}
+\DoxyCodeLine{47             \mbox{\hyperlink{classDataBase_a57dbd827ca7fcbf52f5a37b3d7d282bf}{valided}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{48             \textcolor{keywordflow}{if} (u.getUserADMIN() == 1) \{}
+\DoxyCodeLine{49                 \mbox{\hyperlink{classDataBase_a1c62878aea33ed7eaa6fcedbf8c8d92e}{isAdmin}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{50             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{51                 \mbox{\hyperlink{classDataBase_a1c62878aea33ed7eaa6fcedbf8c8d92e}{isAdmin}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{52             \}}
+\DoxyCodeLine{53             }
+\DoxyCodeLine{54             }
+\DoxyCodeLine{55             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{56         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{57             \mbox{\hyperlink{classDataBase_a57dbd827ca7fcbf52f5a37b3d7d282bf}{valided}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{58         \}}
+\DoxyCodeLine{59     \}}
+\DoxyCodeLine{60     \textcolor{keywordflow}{return} \mbox{\hyperlink{classDataBase_a57dbd827ca7fcbf52f5a37b3d7d282bf}{valided}};}
+\DoxyCodeLine{61 \}}
+
+\end{DoxyCode}
+
+
+References valided.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDataBase_a95d2b301efc3ca8c2e6f753c462969a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDataBase_a58c062b3191ce56ee860af493f651818}\label{classDataBase_a58c062b3191ce56ee860af493f651818}} 
+\index{DataBase@{DataBase}!writeUsers@{writeUsers}}
+\index{writeUsers@{writeUsers}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{writeUsers()}{writeUsers()}}
+{\footnotesize\ttfamily void Data\+Base\+::write\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methot used for write in the file users.\+dat the users at the end of the program. 
+
+
+
+Definition at line 111 of file Data\+Base.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                           \{}
+\DoxyCodeLine{112     \textcolor{keywordtype}{int} numRecord = 1;}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114     fstream outUsersFile (\textcolor{stringliteral}{"{}./resources/users.dat"{}}, ios::out | ios::binary | ios::trunc);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     }
+\DoxyCodeLine{117     \textcolor{keywordflow}{if} (!outUsersFile) \{ \textcolor{comment}{// file couldn't be opened}}
+\DoxyCodeLine{118         cerr << \textcolor{stringliteral}{"{}File could not be opened"{}} << endl;}
+\DoxyCodeLine{119         exit (1);}
+\DoxyCodeLine{120     \}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122     \textcolor{keywordflow}{for} (\mbox{\hyperlink{classUser}{User}} u : \mbox{\hyperlink{classDataBase_a3c93fb3bfb0f02df0255f458812be338}{vectorUser}}) \{}
+\DoxyCodeLine{123        }
+\DoxyCodeLine{124         \mbox{\hyperlink{classUser}{User}} user(u.getUserNIF(), u.getUserID(), u.getUserADMIN());}
+\DoxyCodeLine{125         user.setNumRecord (numRecord);}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127         outUsersFile.seekp ((user.getNumRecord() -\/ 1 ) * }
+\DoxyCodeLine{128         sizeof (\mbox{\hyperlink{classUser}{User}}));}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130         outUsersFile.write (\textcolor{keyword}{reinterpret\_cast <}\textcolor{keyword}{const }\textcolor{keywordtype}{char} *\textcolor{keyword}{>} (\&user),}
+\DoxyCodeLine{131         \textcolor{keyword}{sizeof} (\mbox{\hyperlink{classUser}{User}}));}
+\DoxyCodeLine{132         numRecord++;}
+\DoxyCodeLine{133     \}  }
+\DoxyCodeLine{134 \}}
+
+\end{DoxyCode}
+
+
+References User\+::get\+Num\+Record(), and User\+::set\+Num\+Record().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDataBase_a58c062b3191ce56ee860af493f651818_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classDataBase_a58c062b3191ce56ee860af493f651818_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}\label{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}} 
+\index{DataBase@{DataBase}!actualID@{actualID}}
+\index{actualID@{actualID}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{actualID}{actualID}}
+{\footnotesize\ttfamily int Data\+Base\+::actual\+ID}
+
+
+
+\mbox{\hyperlink{classUser}{User}} that is used to login. 
+
+
+
+Definition at line 89 of file Data\+Base.\+h.
+
+\mbox{\Hypertarget{classDataBase_a3cb0ff9744020f3e72442d61723bcacf}\label{classDataBase_a3cb0ff9744020f3e72442d61723bcacf}} 
+\index{DataBase@{DataBase}!admin@{admin}}
+\index{admin@{admin}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{admin}{admin}}
+{\footnotesize\ttfamily int Data\+Base\+::admin}
+
+
+
+Definition at line 82 of file Data\+Base.\+h.
+
+\mbox{\Hypertarget{classDataBase_a1c62878aea33ed7eaa6fcedbf8c8d92e}\label{classDataBase_a1c62878aea33ed7eaa6fcedbf8c8d92e}} 
+\index{DataBase@{DataBase}!isAdmin@{isAdmin}}
+\index{isAdmin@{isAdmin}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{isAdmin}{isAdmin}}
+{\footnotesize\ttfamily bool Data\+Base\+::is\+Admin}
+
+
+
+Definition at line 83 of file Data\+Base.\+h.
+
+\mbox{\Hypertarget{classDataBase_ac892c4a1e4ce36b70317cae110b9a526}\label{classDataBase_ac892c4a1e4ce36b70317cae110b9a526}} 
+\index{DataBase@{DataBase}!nuevoID@{nuevoID}}
+\index{nuevoID@{nuevoID}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{nuevoID}{nuevoID}}
+{\footnotesize\ttfamily int Data\+Base\+::nuevo\+ID}
+
+
+
+Definition at line 80 of file Data\+Base.\+h.
+
+\mbox{\Hypertarget{classDataBase_aa4c9dbbea8e911eab6e59ef7eca65b39}\label{classDataBase_aa4c9dbbea8e911eab6e59ef7eca65b39}} 
+\index{DataBase@{DataBase}!nuevoNIF@{nuevoNIF}}
+\index{nuevoNIF@{nuevoNIF}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{nuevoNIF}{nuevoNIF}}
+{\footnotesize\ttfamily int Data\+Base\+::nuevo\+NIF}
+
+
+
+Definition at line 81 of file Data\+Base.\+h.
+
+\mbox{\Hypertarget{classDataBase_a57dbd827ca7fcbf52f5a37b3d7d282bf}\label{classDataBase_a57dbd827ca7fcbf52f5a37b3d7d282bf}} 
+\index{DataBase@{DataBase}!valided@{valided}}
+\index{valided@{valided}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{valided}{valided}}
+{\footnotesize\ttfamily bool Data\+Base\+::valided}
+
+
+
+bool to return the 
+
+
+
+Definition at line 64 of file Data\+Base.\+h.
+
+\mbox{\Hypertarget{classDataBase_a3c93fb3bfb0f02df0255f458812be338}\label{classDataBase_a3c93fb3bfb0f02df0255f458812be338}} 
+\index{DataBase@{DataBase}!vectorUser@{vectorUser}}
+\index{vectorUser@{vectorUser}!DataBase@{DataBase}}
+\doxysubsubsection{\texorpdfstring{vectorUser}{vectorUser}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{classUser}{User}}$>$ Data\+Base\+::vector\+User\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Users storage. 
+
+
+
+Definition at line 96 of file Data\+Base.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{DataBase_8h}{Data\+Base.\+h}}\item 
+src/\mbox{\hyperlink{DataBase_8cpp}{Data\+Base.\+cpp}}\end{DoxyCompactItemize}
