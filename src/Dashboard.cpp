@@ -238,7 +238,7 @@ void Dashboard::eraseUserDashboard() {
         database->userList();
         cout << "\n----------------------------------------------------------------------------------------------------\n" << endl;
         cout << "\nIntroduzca el ID del usuario que desa borrar o introduzca 0 para volver" << endl;
-        cout << database->actualID << endl;
+        cout << "\n\t\tUsuario actual: " << database->actualID << endl;
         cout << ">>> ";
         cin >> opcion;
         try {
@@ -275,11 +275,11 @@ void Dashboard::addUserDashboard() {
                 cout << "Introduzca ID del nuevo usuario" << endl;
                 cout << ">>> ";
                 cin >> database->nuevoID;
-                cout << database->nuevoID << endl;
+                //cout << database->nuevoID << endl;
                 cout << "Introduzca NIF del nuevo usuario" << endl;
                 cout << ">>> ";
                 cin >> database->nuevoNIF;
-                cout << database->nuevoNIF << endl;
+                //cout << database->nuevoNIF << endl;
                 cout << "¿El usuario es adiministrador? (introduzaca 0 para NO, 1 para SI" << endl;
                 cout << ">>> ";
                 cin >> database->admin;

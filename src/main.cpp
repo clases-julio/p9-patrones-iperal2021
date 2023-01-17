@@ -27,11 +27,15 @@ int main() {
     ptrbase->readUsers();
     // a login and a dashboard objects are created
     Login* login = Login::getTheLogin ();
+
     Dashboard* dashboard = Dashboard::getTheDashboard ();
+
     while (true) {
        
         system("clear"); // used in lots of functions to clear the screen
+        
         login->login(ptrbase); // initialize the login screen
+        
         dashboard->dashboard(ptrbase, login->go_to_dashboard());
     }
     return 0;

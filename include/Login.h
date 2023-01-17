@@ -57,6 +57,7 @@ class Login {
     int contador;
     int temp_ID;
     int temp_NIF;
+    
     static Login* singleLogin;
 };
 #endif
