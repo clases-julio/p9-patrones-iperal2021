@@ -16,7 +16,7 @@ To compile and run the program it should be followed some steps:
 
 * First of all download the files from the repository and make sure they are all where they should be.
 * Then, use the command *make* in the command line to compile.
-* Once the program is compiled, a *main* file should have appeared in the *build* directory. Now, to run the program, write the command *./build/main* in the command line.
+* Once the program is compiled, a *main* file should have appeared in the *build* directory. Now, to run the program, write the command *./build/main* in the command line. To sing up, an ADMIN user is: ID: 1212  NIF: 12121212
 
 ```bash
 ~$ ./build/main
