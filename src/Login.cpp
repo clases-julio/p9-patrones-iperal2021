@@ -129,7 +129,7 @@ void Login::set_login() {
         // If the credentials are correct the user goes to the dashboard
         if (data_valid == true) {
             database->actualID = temp_ID;
-            cout << database->actualID << endl;
+            //cout << database->actualID << endl;
             cout << "\u001b[32m\n\n\t\t\tBienvenido al sistema\u001b[0m" << endl;
             contador = 0;
             return;
