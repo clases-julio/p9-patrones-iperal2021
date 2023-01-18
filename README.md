@@ -17,6 +17,7 @@ To compile and run the program it should be followed some steps:
 * First of all download the files from the repository and make sure they are all where they should be.
 * Then, use the command *make* in the command line to compile.
 * Once the program is compiled, a *main* file should have appeared in the *build* directory. Now, to run the program, write the command *./build/main* in the command line.
+
 ```bash
 ~$ ./build/main
 
@@ -24,7 +25,22 @@ To compile and run the program it should be followed some steps:
 
 ## Design pattern chosen
 
-The design pattern chosen for this program is the ***singleton*** pattern due to it's easy implementation and because it could help to avoid future errors. This pattern is used to avoid the creation of several objects of a type that should only exits one of each. The objects that has this pattern implemented are the **Login** and the **Dashboard** of the *main.cpp* file.
+The design pattern chosen for this program is the ***singleton*** pattern due to it's easy implementation and because it could help to avoid future errors. This pattern is used to avoid the creation of several objects of a type that should only exits one of each. The objects that has this pattern implemented are the **Login** and the **Dashboard** of the *[main.cpp](https://github.com/clases-julio/p9-patrones-iperal2021/blob/main/src/main.cpp)* file.
+```c
+Login* login = Login::getTheLogin ();
+
+Dashboard* dashboard = Dashboard::getTheDashboard ();
+
+while (true) {
+       
+    system("clear"); // used in lots of functions to clear the screen
+        
+    login->login(ptrbase); // initialize the login screen
+        
+    dashboard->dashboard(ptrbase, login->go_to_dashboard());
+}
+return 0;
+```
 
 ## Documentation
 
