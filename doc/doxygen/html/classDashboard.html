@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="mylogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Julio Veganos e Hijos interfaz
    </div>
@@ -236,11 +237,11 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Introduzca ID del nuevo usuario&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;&gt;&gt;&gt; &quot;</span>;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                cin &gt;&gt; <a class="code" href="classDashboard.html#a47f89f10edefb3400b1e3710d376ac4f">database</a>-&gt;<a class="code" href="classDataBase.html#ac892c4a1e4ce36b70317cae110b9a526">nuevoID</a>;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                cout &lt;&lt; <a class="code" href="classDashboard.html#a47f89f10edefb3400b1e3710d376ac4f">database</a>-&gt;<a class="code" href="classDataBase.html#ac892c4a1e4ce36b70317cae110b9a526">nuevoID</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <span class="comment">//cout &lt;&lt; database-&gt;nuevoID &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Introduzca NIF del nuevo usuario&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;&gt;&gt;&gt; &quot;</span>;</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                cin &gt;&gt; <a class="code" href="classDashboard.html#a47f89f10edefb3400b1e3710d376ac4f">database</a>-&gt;<a class="code" href="classDataBase.html#aa4c9dbbea8e911eab6e59ef7eca65b39">nuevoNIF</a>;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                cout &lt;&lt; <a class="code" href="classDashboard.html#a47f89f10edefb3400b1e3710d376ac4f">database</a>-&gt;<a class="code" href="classDataBase.html#aa4c9dbbea8e911eab6e59ef7eca65b39">nuevoNIF</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <span class="comment">//cout &lt;&lt; database-&gt;nuevoNIF &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;¿El usuario es adiministrador? (introduzaca 0 para NO, 1 para SI&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;&gt;&gt;&gt; &quot;</span>;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                cin &gt;&gt; <a class="code" href="classDashboard.html#a47f89f10edefb3400b1e3710d376ac4f">database</a>-&gt;<a class="code" href="classDataBase.html#a3cb0ff9744020f3e72442d61723bcacf">admin</a>;</div>
@@ -416,7 +417,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="classDashboard.html#a47f89f10edefb3400b1e3710d376ac4f">database</a>-&gt;<a class="code" href="classDataBase.html#af6ab6c26576ea672c207d8553ade271f">userList</a>();</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\n----------------------------------------------------------------------------------------------------\n&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\nIntroduzca el ID del usuario que desa borrar o introduzca 0 para volver&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        cout &lt;&lt; <a class="code" href="classDashboard.html#a47f89f10edefb3400b1e3710d376ac4f">database</a>-&gt;<a class="code" href="classDataBase.html#adc832eb4a1e9966164f926c5c40e3f1f">actualID</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\n\t\tUsuario actual: &quot;</span> &lt;&lt; <a class="code" href="classDashboard.html#a47f89f10edefb3400b1e3710d376ac4f">database</a>-&gt;<a class="code" href="classDataBase.html#adc832eb4a1e9966164f926c5c40e3f1f">actualID</a> &lt;&lt; endl;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;&gt;&gt;&gt; &quot;</span>;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        cin &gt;&gt; <a class="code" href="classDashboard.html#a02a46fe5c56656a0d5edbda331ce4c8a">opcion</a>;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">try</span> {</div>

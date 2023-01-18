@@ -6,8 +6,7 @@
 
 
 
-Collaboration diagram for Login\+:
-\nopagebreak
+Collaboration diagram for Login\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -247,8 +246,7 @@ Definition at line 151 of file Login.\+cpp.
 \DoxyCodeLine{158 \}}
 
 \end{DoxyCode}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -372,7 +370,7 @@ Definition at line 115 of file Login.\+cpp.
 \DoxyCodeLine{129         \textcolor{comment}{// If the credentials are correct the user goes to the dashboard}}
 \DoxyCodeLine{130         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classLogin_ae90fd22f659384ae29c259552732ea5c}{data\_valid}} == \textcolor{keyword}{true}) \{}
 \DoxyCodeLine{131             \mbox{\hyperlink{classLogin_a296309ab65a0e412f7ee3c34dec051ad}{database}}-\/>\mbox{\hyperlink{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}{actualID}} = \mbox{\hyperlink{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}{temp\_ID}};}
-\DoxyCodeLine{132             cout << \mbox{\hyperlink{classLogin_a296309ab65a0e412f7ee3c34dec051ad}{database}}-\/>\mbox{\hyperlink{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}{actualID}} << endl;}
+\DoxyCodeLine{132             \textcolor{comment}{//cout << database-\/>actualID << endl;}}
 \DoxyCodeLine{133             cout << \textcolor{stringliteral}{"{}\(\backslash\)u001b[32m\(\backslash\)n\(\backslash\)n\(\backslash\)t\(\backslash\)t\(\backslash\)tBienvenido al sistema\(\backslash\)u001b[0m"{}} << endl;}
 \DoxyCodeLine{134             \mbox{\hyperlink{classLogin_ab36c94da06fac87aff56e926b02f3dca}{contador}} = 0;}
 \DoxyCodeLine{135             \textcolor{keywordflow}{return};}
@@ -440,7 +438,7 @@ Definition at line 56 of file Login.\+h.
 
 
 
-Definition at line 60 of file Login.\+h.
+Definition at line 61 of file Login.\+h.
 
 \mbox{\Hypertarget{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}\label{classLogin_ad0f1cee71a07801d05c5a2b6b455a655}} 
 \index{Login@{Login}!temp\_ID@{temp\_ID}}

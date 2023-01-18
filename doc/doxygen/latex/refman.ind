@@ -1,45 +1,45 @@
 \begin{theindex}
 
   \item {actualID}
-    \subitem {DataBase}, \hyperpage{34}
+    \subitem {DataBase}, \hyperpage{36}
   \item {actualUserException}, \hyperpage{7}
     \subitem {actualUserException}, \hyperpage{8}
   \item {addUser}
-    \subitem {DataBase}, \hyperpage{30}
+    \subitem {DataBase}, \hyperpage{31}
   \item {addUserDashboard}
-    \subitem {Dashboard}, \hyperpage{19}
+    \subitem {Dashboard}, \hyperpage{20}
   \item {ADMIN}
     \subitem {Admin}, \hyperpage{11}
-    \subitem {Employer}, \hyperpage{38}
-    \subitem {User}, \hyperpage{69}
-    \subitem {User.cpp}, \hyperpage{100}
+    \subitem {Employer}, \hyperpage{40}
+    \subitem {User}, \hyperpage{73}
+    \subitem {User.cpp}, \hyperpage{104}
   \item {Admin}, \hyperpage{9}
     \subitem {ADMIN}, \hyperpage{11}
     \subitem {Admin}, \hyperpage{10}
   \item {admin}
-    \subitem {DataBase}, \hyperpage{34}
-    \subitem {DataBase.cpp}, \hyperpage{92}
+    \subitem {DataBase}, \hyperpage{36}
+    \subitem {DataBase.cpp}, \hyperpage{96}
   \item {airq}
-    \subitem {Dashboard.cpp}, \hyperpage{90}
+    \subitem {Dashboard.cpp}, \hyperpage{94}
   \item {AirQuality}, \hyperpage{11}
     \subitem {AirQuality}, \hyperpage{12}
     \subitem {getData}, \hyperpage{13}
   \item {alarm}
-    \subitem {Security}, \hyperpage{50}
-  \item {alarm\_status}
-    \subitem {Security.cpp}, \hyperpage{97}
-  \item {alarma\_status}
     \subitem {Security}, \hyperpage{54}
+  \item {alarm\_status}
+    \subitem {Security.cpp}, \hyperpage{101}
+  \item {alarma\_status}
+    \subitem {Security}, \hyperpage{58}
 
   \indexspace
 
   \item {back}
-    \subitem {Security.cpp}, \hyperpage{97}
+    \subitem {Security.cpp}, \hyperpage{101}
   \item {back\_1}
-    \subitem {Sensor}, \hyperpage{58}
-    \subitem {Sensor.cpp}, \hyperpage{99}
+    \subitem {Sensor}, \hyperpage{62}
+    \subitem {Sensor.cpp}, \hyperpage{103}
   \item {brigh}
-    \subitem {Dashboard.cpp}, \hyperpage{90}
+    \subitem {Dashboard.cpp}, \hyperpage{94}
   \item {Brightness}, \hyperpage{13}
     \subitem {Brightness}, \hyperpage{15}
     \subitem {getData}, \hyperpage{15}
@@ -47,368 +47,385 @@
   \indexspace
 
   \item {cabecera}
-    \subitem {Dashboard}, \hyperpage{20}
+    \subitem {Dashboard}, \hyperpage{21}
   \item {cabeceraSensor}
-    \subitem {Sensor}, \hyperpage{57}
+    \subitem {Sensor}, \hyperpage{61}
   \item {camera}
-    \subitem {Security}, \hyperpage{51}
+    \subitem {Security}, \hyperpage{55}
   \item {comprobar\_user\_data}
-    \subitem {Login}, \hyperpage{44}
-  \item {contador}
     \subitem {Login}, \hyperpage{47}
-    \subitem {Login.cpp}, \hyperpage{94}
+  \item {contador}
+    \subitem {Login}, \hyperpage{51}
+    \subitem {Login.cpp}, \hyperpage{98}
   \item {credentialException}, \hyperpage{16}
     \subitem {credentialException}, \hyperpage{17}
 
   \indexspace
 
   \item {d}
-    \subitem {main.h}, \hyperpage{83}
+    \subitem {main.h}, \hyperpage{87}
   \item {Dashboard}, \hyperpage{18}
-    \subitem {addUserDashboard}, \hyperpage{19}
-    \subitem {cabecera}, \hyperpage{20}
-    \subitem {Dashboard}, \hyperpage{19}
-    \subitem {dashboard}, \hyperpage{21}
-    \subitem {database}, \hyperpage{27}
+    \subitem {addUserDashboard}, \hyperpage{20}
+    \subitem {cabecera}, \hyperpage{21}
+    \subitem {Dashboard}, \hyperpage{19, 20}
+    \subitem {dashboard}, \hyperpage{22}
+    \subitem {database}, \hyperpage{28}
     \subitem {eraseUserDashboard}, \hyperpage{22}
-    \subitem {goBack}, \hyperpage{23}
-    \subitem {goOut}, \hyperpage{23}
-    \subitem {goToSecurity}, \hyperpage{23}
-    \subitem {goToSensors}, \hyperpage{24}
-    \subitem {opcion}, \hyperpage{27}
-    \subitem {pantalla}, \hyperpage{28}
-    \subitem {set\_dashboardAdmin}, \hyperpage{26}
-    \subitem {set\_dashboardEmployer}, \hyperpage{27}
+    \subitem {getTheDashboard}, \hyperpage{23}
+    \subitem {goBack}, \hyperpage{24}
+    \subitem {goOut}, \hyperpage{24}
+    \subitem {goToSecurity}, \hyperpage{24}
+    \subitem {goToSensors}, \hyperpage{25}
+    \subitem {opcion}, \hyperpage{29}
+    \subitem {operator=}, \hyperpage{27}
+    \subitem {pantalla}, \hyperpage{29}
+    \subitem {set\_dashboardAdmin}, \hyperpage{27}
+    \subitem {set\_dashboardEmployer}, \hyperpage{28}
+    \subitem {singleDashboard}, \hyperpage{29}
   \item {dashboard}
-    \subitem {Dashboard}, \hyperpage{21}
+    \subitem {Dashboard}, \hyperpage{22}
   \item {Dashboard.cpp}
-    \subitem {airq}, \hyperpage{90}
-    \subitem {brigh}, \hyperpage{90}
-    \subitem {database}, \hyperpage{90}
-    \subitem {hum}, \hyperpage{90}
-    \subitem {opcion}, \hyperpage{90}
-    \subitem {s}, \hyperpage{91}
-    \subitem {sen}, \hyperpage{91}
-    \subitem {temp}, \hyperpage{91}
+    \subitem {airq}, \hyperpage{94}
+    \subitem {brigh}, \hyperpage{94}
+    \subitem {database}, \hyperpage{94}
+    \subitem {hum}, \hyperpage{94}
+    \subitem {opcion}, \hyperpage{94}
+    \subitem {s}, \hyperpage{95}
+    \subitem {sen}, \hyperpage{95}
+    \subitem {temp}, \hyperpage{95}
   \item {data\_valid}
-    \subitem {Login}, \hyperpage{48}
-    \subitem {Login.cpp}, \hyperpage{94}
-  \item {DataBase}, \hyperpage{28}
-    \subitem {actualID}, \hyperpage{34}
-    \subitem {addUser}, \hyperpage{30}
-    \subitem {admin}, \hyperpage{34}
-    \subitem {DataBase}, \hyperpage{29}
-    \subitem {eraseUser}, \hyperpage{30}
-    \subitem {isAdmin}, \hyperpage{35}
-    \subitem {nuevoID}, \hyperpage{35}
-    \subitem {nuevoNIF}, \hyperpage{35}
-    \subitem {readUsers}, \hyperpage{31}
-    \subitem {userList}, \hyperpage{32}
-    \subitem {valided}, \hyperpage{35}
-    \subitem {validUser}, \hyperpage{32}
-    \subitem {vectorUser}, \hyperpage{35}
-    \subitem {writeUsers}, \hyperpage{33}
+    \subitem {Login}, \hyperpage{51}
+    \subitem {Login.cpp}, \hyperpage{98}
+  \item {DataBase}, \hyperpage{30}
+    \subitem {actualID}, \hyperpage{36}
+    \subitem {addUser}, \hyperpage{31}
+    \subitem {admin}, \hyperpage{36}
+    \subitem {DataBase}, \hyperpage{31}
+    \subitem {eraseUser}, \hyperpage{32}
+    \subitem {isAdmin}, \hyperpage{36}
+    \subitem {nuevoID}, \hyperpage{36}
+    \subitem {nuevoNIF}, \hyperpage{36}
+    \subitem {readUsers}, \hyperpage{32}
+    \subitem {userList}, \hyperpage{33}
+    \subitem {valided}, \hyperpage{37}
+    \subitem {validUser}, \hyperpage{34}
+    \subitem {vectorUser}, \hyperpage{37}
+    \subitem {writeUsers}, \hyperpage{35}
   \item {database}
-    \subitem {Dashboard}, \hyperpage{27}
-    \subitem {Dashboard.cpp}, \hyperpage{90}
-    \subitem {Login}, \hyperpage{48}
+    \subitem {Dashboard}, \hyperpage{28}
+    \subitem {Dashboard.cpp}, \hyperpage{94}
+    \subitem {Login}, \hyperpage{51}
   \item {DataBase.cpp}
-    \subitem {admin}, \hyperpage{92}
-    \subitem {nuevoID}, \hyperpage{92}
-    \subitem {nuevoNIF}, \hyperpage{92}
-    \subitem {valided}, \hyperpage{92}
+    \subitem {admin}, \hyperpage{96}
+    \subitem {nuevoID}, \hyperpage{96}
+    \subitem {nuevoNIF}, \hyperpage{96}
+    \subitem {valided}, \hyperpage{96}
   \item {db}
-    \subitem {Security.cpp}, \hyperpage{97}
+    \subitem {Security.cpp}, \hyperpage{101}
   \item {door}
-    \subitem {Security}, \hyperpage{51}
+    \subitem {Security}, \hyperpage{55}
 
   \indexspace
 
-  \item {Employer}, \hyperpage{36}
-    \subitem {ADMIN}, \hyperpage{38}
-    \subitem {Employer}, \hyperpage{37}
+  \item {Employer}, \hyperpage{37}
+    \subitem {ADMIN}, \hyperpage{40}
+    \subitem {Employer}, \hyperpage{39}
   \item {entrada}
-    \subitem {Security.cpp}, \hyperpage{98}
+    \subitem {Security.cpp}, \hyperpage{102}
   \item {eraseUser}
-    \subitem {DataBase}, \hyperpage{30}
+    \subitem {DataBase}, \hyperpage{32}
   \item {eraseUserDashboard}
     \subitem {Dashboard}, \hyperpage{22}
 
   \indexspace
 
   \item {generate\_random}
-    \subitem {Security}, \hyperpage{52}
+    \subitem {Security}, \hyperpage{56}
   \item {get\_ID}
-    \subitem {Login}, \hyperpage{45}
+    \subitem {Login}, \hyperpage{47}
   \item {get\_NIF}
-    \subitem {Login}, \hyperpage{45}
+    \subitem {Login}, \hyperpage{48}
   \item {getData}
     \subitem {AirQuality}, \hyperpage{13}
     \subitem {Brightness}, \hyperpage{15}
-    \subitem {Humidity}, \hyperpage{40}
-    \subitem {Sensor}, \hyperpage{57}
-    \subitem {Temperature}, \hyperpage{62}
+    \subitem {Humidity}, \hyperpage{42}
+    \subitem {Sensor}, \hyperpage{61}
+    \subitem {Temperature}, \hyperpage{66}
   \item {getNumRecord}
-    \subitem {User}, \hyperpage{66}
+    \subitem {User}, \hyperpage{70}
+  \item {getTheDashboard}
+    \subitem {Dashboard}, \hyperpage{23}
+  \item {getTheLogin}
+    \subitem {Login}, \hyperpage{48}
   \item {getUserADMIN}
-    \subitem {User}, \hyperpage{67}
+    \subitem {User}, \hyperpage{71}
   \item {getUserID}
-    \subitem {User}, \hyperpage{67}
+    \subitem {User}, \hyperpage{71}
   \item {getUserNIF}
-    \subitem {User}, \hyperpage{67}
+    \subitem {User}, \hyperpage{71}
   \item {go\_back}
-    \subitem {Login}, \hyperpage{46}
+    \subitem {Login}, \hyperpage{49}
   \item {go\_to\_dashboard}
-    \subitem {Login}, \hyperpage{46}
+    \subitem {Login}, \hyperpage{49}
   \item {goBack}
-    \subitem {Dashboard}, \hyperpage{23}
-  \item {goBackSecurity}
-    \subitem {Security}, \hyperpage{52}
-  \item {goBackSensor}
-    \subitem {Sensor}, \hyperpage{58}
-  \item {goOut}
-    \subitem {Dashboard}, \hyperpage{23}
-  \item {goToSecurity}
-    \subitem {Dashboard}, \hyperpage{23}
-  \item {goToSensors}
     \subitem {Dashboard}, \hyperpage{24}
+  \item {goBackSecurity}
+    \subitem {Security}, \hyperpage{56}
+  \item {goBackSensor}
+    \subitem {Sensor}, \hyperpage{62}
+  \item {goOut}
+    \subitem {Dashboard}, \hyperpage{24}
+  \item {goToSecurity}
+    \subitem {Dashboard}, \hyperpage{24}
+  \item {goToSensors}
+    \subitem {Dashboard}, \hyperpage{25}
 
   \indexspace
 
   \item {hum}
-    \subitem {Dashboard.cpp}, \hyperpage{90}
-  \item {Humidity}, \hyperpage{38}
-    \subitem {getData}, \hyperpage{40}
-    \subitem {Humidity}, \hyperpage{39}
+    \subitem {Dashboard.cpp}, \hyperpage{94}
+  \item {Humidity}, \hyperpage{40}
+    \subitem {getData}, \hyperpage{42}
+    \subitem {Humidity}, \hyperpage{41}
 
   \indexspace
 
   \item {ID}
-    \subitem {User}, \hyperpage{69}
-    \subitem {User.cpp}, \hyperpage{100}
-  \item {include/Admin.h}, \hyperpage{71}
-  \item {include/AirQuality.h}, \hyperpage{72}
-  \item {include/Brightness.h}, \hyperpage{73}
-  \item {include/Dashboard.h}, \hyperpage{75}
-  \item {include/DataBase.h}, \hyperpage{76}
-  \item {include/Employer.h}, \hyperpage{77}
-  \item {include/Exceptions.h}, \hyperpage{78}
-  \item {include/Humidity.h}, \hyperpage{79}
-  \item {include/Login.h}, \hyperpage{81}
-  \item {include/main.h}, \hyperpage{82}
-  \item {include/Security.h}, \hyperpage{84}
-  \item {include/Sensor.h}, \hyperpage{85}
-  \item {include/Temperature.h}, \hyperpage{86}
-  \item {include/User.h}, \hyperpage{87}
-  \item {instructionException}, \hyperpage{41}
-    \subitem {instructionException}, \hyperpage{42}
+    \subitem {User}, \hyperpage{73}
+    \subitem {User.cpp}, \hyperpage{104}
+  \item {include/Admin.h}, \hyperpage{75}
+  \item {include/AirQuality.h}, \hyperpage{76}
+  \item {include/Brightness.h}, \hyperpage{77}
+  \item {include/Dashboard.h}, \hyperpage{79}
+  \item {include/DataBase.h}, \hyperpage{80}
+  \item {include/Employer.h}, \hyperpage{81}
+  \item {include/Exceptions.h}, \hyperpage{82}
+  \item {include/Humidity.h}, \hyperpage{83}
+  \item {include/Login.h}, \hyperpage{85}
+  \item {include/main.h}, \hyperpage{86}
+  \item {include/Security.h}, \hyperpage{88}
+  \item {include/Sensor.h}, \hyperpage{89}
+  \item {include/Temperature.h}, \hyperpage{90}
+  \item {include/User.h}, \hyperpage{91}
+  \item {instructionException}, \hyperpage{43}
+    \subitem {instructionException}, \hyperpage{44}
   \item {intentos}
-    \subitem {Login}, \hyperpage{48}
-    \subitem {Login.cpp}, \hyperpage{94}
+    \subitem {Login}, \hyperpage{51}
+    \subitem {Login.cpp}, \hyperpage{98}
   \item {isAdmin}
-    \subitem {DataBase}, \hyperpage{35}
+    \subitem {DataBase}, \hyperpage{36}
 
   \indexspace
 
   \item {l}
-    \subitem {main.h}, \hyperpage{83}
-  \item {Login}, \hyperpage{42}
-    \subitem {comprobar\_user\_data}, \hyperpage{44}
-    \subitem {contador}, \hyperpage{47}
-    \subitem {data\_valid}, \hyperpage{48}
-    \subitem {database}, \hyperpage{48}
-    \subitem {get\_ID}, \hyperpage{45}
-    \subitem {get\_NIF}, \hyperpage{45}
-    \subitem {go\_back}, \hyperpage{46}
-    \subitem {go\_to\_dashboard}, \hyperpage{46}
-    \subitem {intentos}, \hyperpage{48}
-    \subitem {Login}, \hyperpage{44}
-    \subitem {login}, \hyperpage{46}
-    \subitem {set\_login}, \hyperpage{47}
-    \subitem {temp\_ID}, \hyperpage{48}
-    \subitem {temp\_NIF}, \hyperpage{48}
-  \item {login}
+    \subitem {main.h}, \hyperpage{87}
+  \item {Login}, \hyperpage{44}
+    \subitem {comprobar\_user\_data}, \hyperpage{47}
+    \subitem {contador}, \hyperpage{51}
+    \subitem {data\_valid}, \hyperpage{51}
+    \subitem {database}, \hyperpage{51}
+    \subitem {get\_ID}, \hyperpage{47}
+    \subitem {get\_NIF}, \hyperpage{48}
+    \subitem {getTheLogin}, \hyperpage{48}
+    \subitem {go\_back}, \hyperpage{49}
+    \subitem {go\_to\_dashboard}, \hyperpage{49}
+    \subitem {intentos}, \hyperpage{51}
     \subitem {Login}, \hyperpage{46}
+    \subitem {login}, \hyperpage{50}
+    \subitem {operator=}, \hyperpage{50}
+    \subitem {set\_login}, \hyperpage{50}
+    \subitem {singleLogin}, \hyperpage{52}
+    \subitem {temp\_ID}, \hyperpage{52}
+    \subitem {temp\_NIF}, \hyperpage{52}
+  \item {login}
+    \subitem {Login}, \hyperpage{50}
   \item {Login.cpp}
-    \subitem {contador}, \hyperpage{94}
-    \subitem {data\_valid}, \hyperpage{94}
-    \subitem {intentos}, \hyperpage{94}
-    \subitem {temp\_ID}, \hyperpage{94}
-    \subitem {temp\_NIF}, \hyperpage{95}
+    \subitem {contador}, \hyperpage{98}
+    \subitem {data\_valid}, \hyperpage{98}
+    \subitem {intentos}, \hyperpage{98}
+    \subitem {temp\_ID}, \hyperpage{98}
+    \subitem {temp\_NIF}, \hyperpage{99}
 
   \indexspace
 
   \item {main}
-    \subitem {main.cpp}, \hyperpage{95}
+    \subitem {main.cpp}, \hyperpage{99}
   \item {main.cpp}
-    \subitem {main}, \hyperpage{95}
+    \subitem {main}, \hyperpage{99}
   \item {main.h}
-    \subitem {d}, \hyperpage{83}
-    \subitem {l}, \hyperpage{83}
+    \subitem {d}, \hyperpage{87}
+    \subitem {l}, \hyperpage{87}
 
   \indexspace
 
   \item {NIF}
-    \subitem {User}, \hyperpage{70}
-    \subitem {User.cpp}, \hyperpage{100}
+    \subitem {User}, \hyperpage{74}
+    \subitem {User.cpp}, \hyperpage{104}
   \item {nuevoID}
-    \subitem {DataBase}, \hyperpage{35}
-    \subitem {DataBase.cpp}, \hyperpage{92}
+    \subitem {DataBase}, \hyperpage{36}
+    \subitem {DataBase.cpp}, \hyperpage{96}
   \item {nuevoNIF}
-    \subitem {DataBase}, \hyperpage{35}
-    \subitem {DataBase.cpp}, \hyperpage{92}
+    \subitem {DataBase}, \hyperpage{36}
+    \subitem {DataBase.cpp}, \hyperpage{96}
   \item {numRecord}
-    \subitem {User}, \hyperpage{70}
+    \subitem {User}, \hyperpage{74}
 
   \indexspace
 
   \item {opcion}
-    \subitem {Dashboard}, \hyperpage{27}
-    \subitem {Dashboard.cpp}, \hyperpage{90}
+    \subitem {Dashboard}, \hyperpage{29}
+    \subitem {Dashboard.cpp}, \hyperpage{94}
   \item {open}
-    \subitem {Security}, \hyperpage{55}
-    \subitem {Security.cpp}, \hyperpage{98}
+    \subitem {Security}, \hyperpage{59}
+    \subitem {Security.cpp}, \hyperpage{102}
   \item {open\_close}
-    \subitem {Security}, \hyperpage{53}
+    \subitem {Security}, \hyperpage{57}
   \item {operator$<$}
-    \subitem {User}, \hyperpage{67}
+    \subitem {User}, \hyperpage{71}
+  \item {operator=}
+    \subitem {Dashboard}, \hyperpage{27}
+    \subitem {Login}, \hyperpage{50}
   \item {operator==}
-    \subitem {User}, \hyperpage{68}
+    \subitem {User}, \hyperpage{72}
 
   \indexspace
 
   \item {pantalla}
-    \subitem {Dashboard}, \hyperpage{28}
+    \subitem {Dashboard}, \hyperpage{29}
 
   \indexspace
 
   \item {randomData}
-    \subitem {Sensor}, \hyperpage{58}
+    \subitem {Sensor}, \hyperpage{62}
   \item {readUsers}
-    \subitem {DataBase}, \hyperpage{31}
+    \subitem {DataBase}, \hyperpage{32}
 
   \indexspace
 
   \item {s}
-    \subitem {Dashboard.cpp}, \hyperpage{91}
-  \item {Security}, \hyperpage{49}
-    \subitem {alarm}, \hyperpage{50}
-    \subitem {alarma\_status}, \hyperpage{54}
-    \subitem {camera}, \hyperpage{51}
-    \subitem {door}, \hyperpage{51}
-    \subitem {generate\_random}, \hyperpage{52}
-    \subitem {goBackSecurity}, \hyperpage{52}
-    \subitem {open}, \hyperpage{55}
-    \subitem {open\_close}, \hyperpage{53}
-    \subitem {Security}, \hyperpage{50}
-    \subitem {security}, \hyperpage{53}
-    \subitem {seguridad}, \hyperpage{55}
-    \subitem {window}, \hyperpage{54}
+    \subitem {Dashboard.cpp}, \hyperpage{95}
+  \item {Security}, \hyperpage{53}
+    \subitem {alarm}, \hyperpage{54}
+    \subitem {alarma\_status}, \hyperpage{58}
+    \subitem {camera}, \hyperpage{55}
+    \subitem {door}, \hyperpage{55}
+    \subitem {generate\_random}, \hyperpage{56}
+    \subitem {goBackSecurity}, \hyperpage{56}
+    \subitem {open}, \hyperpage{59}
+    \subitem {open\_close}, \hyperpage{57}
+    \subitem {Security}, \hyperpage{54}
+    \subitem {security}, \hyperpage{57}
+    \subitem {seguridad}, \hyperpage{59}
+    \subitem {window}, \hyperpage{58}
   \item {security}
-    \subitem {Security}, \hyperpage{53}
+    \subitem {Security}, \hyperpage{57}
   \item {Security.cpp}
-    \subitem {alarm\_status}, \hyperpage{97}
-    \subitem {back}, \hyperpage{97}
-    \subitem {db}, \hyperpage{97}
-    \subitem {entrada}, \hyperpage{98}
-    \subitem {open}, \hyperpage{98}
-    \subitem {seguridad}, \hyperpage{98}
+    \subitem {alarm\_status}, \hyperpage{101}
+    \subitem {back}, \hyperpage{101}
+    \subitem {db}, \hyperpage{101}
+    \subitem {entrada}, \hyperpage{102}
+    \subitem {open}, \hyperpage{102}
+    \subitem {seguridad}, \hyperpage{102}
   \item {seguridad}
-    \subitem {Security}, \hyperpage{55}
-    \subitem {Security.cpp}, \hyperpage{98}
+    \subitem {Security}, \hyperpage{59}
+    \subitem {Security.cpp}, \hyperpage{102}
   \item {sen}
-    \subitem {Dashboard.cpp}, \hyperpage{91}
-  \item {Sensor}, \hyperpage{55}
-    \subitem {back\_1}, \hyperpage{58}
-    \subitem {cabeceraSensor}, \hyperpage{57}
-    \subitem {getData}, \hyperpage{57}
-    \subitem {goBackSensor}, \hyperpage{58}
-    \subitem {randomData}, \hyperpage{58}
-    \subitem {Sensor}, \hyperpage{56}
+    \subitem {Dashboard.cpp}, \hyperpage{95}
+  \item {Sensor}, \hyperpage{59}
+    \subitem {back\_1}, \hyperpage{62}
+    \subitem {cabeceraSensor}, \hyperpage{61}
+    \subitem {getData}, \hyperpage{61}
+    \subitem {goBackSensor}, \hyperpage{62}
+    \subitem {randomData}, \hyperpage{62}
+    \subitem {Sensor}, \hyperpage{60}
   \item {Sensor.cpp}
-    \subitem {back\_1}, \hyperpage{99}
+    \subitem {back\_1}, \hyperpage{103}
   \item {set\_dashboardAdmin}
-    \subitem {Dashboard}, \hyperpage{26}
-  \item {set\_dashboardEmployer}
     \subitem {Dashboard}, \hyperpage{27}
+  \item {set\_dashboardEmployer}
+    \subitem {Dashboard}, \hyperpage{28}
   \item {set\_login}
-    \subitem {Login}, \hyperpage{47}
+    \subitem {Login}, \hyperpage{50}
   \item {setNumRecord}
-    \subitem {User}, \hyperpage{68}
+    \subitem {User}, \hyperpage{72}
   \item {setUserID}
-    \subitem {User}, \hyperpage{68}
+    \subitem {User}, \hyperpage{72}
   \item {setUserNIF}
-    \subitem {User}, \hyperpage{69}
+    \subitem {User}, \hyperpage{73}
   \item {setUserRole}
-    \subitem {User}, \hyperpage{69}
-  \item {src/AirQuality.cpp}, \hyperpage{88}
-  \item {src/Brightness.cpp}, \hyperpage{89}
-  \item {src/Dashboard.cpp}, \hyperpage{89}
-  \item {src/DataBase.cpp}, \hyperpage{91}
-  \item {src/Humidity.cpp}, \hyperpage{93}
-  \item {src/Login.cpp}, \hyperpage{93}
-  \item {src/main.cpp}, \hyperpage{95}
-  \item {src/Security.cpp}, \hyperpage{96}
-  \item {src/Sensor.cpp}, \hyperpage{98}
-  \item {src/Temperature.cpp}, \hyperpage{99}
-  \item {src/User.cpp}, \hyperpage{100}
-  \item {stringException}, \hyperpage{59}
-    \subitem {stringException}, \hyperpage{60}
+    \subitem {User}, \hyperpage{73}
+  \item {singleDashboard}
+    \subitem {Dashboard}, \hyperpage{29}
+  \item {singleLogin}
+    \subitem {Login}, \hyperpage{52}
+  \item {src/AirQuality.cpp}, \hyperpage{92}
+  \item {src/Brightness.cpp}, \hyperpage{93}
+  \item {src/Dashboard.cpp}, \hyperpage{93}
+  \item {src/DataBase.cpp}, \hyperpage{95}
+  \item {src/Humidity.cpp}, \hyperpage{97}
+  \item {src/Login.cpp}, \hyperpage{97}
+  \item {src/main.cpp}, \hyperpage{99}
+  \item {src/Security.cpp}, \hyperpage{100}
+  \item {src/Sensor.cpp}, \hyperpage{102}
+  \item {src/Temperature.cpp}, \hyperpage{103}
+  \item {src/User.cpp}, \hyperpage{104}
+  \item {stringException}, \hyperpage{63}
+    \subitem {stringException}, \hyperpage{64}
 
   \indexspace
 
   \item {temp}
-    \subitem {Dashboard.cpp}, \hyperpage{91}
+    \subitem {Dashboard.cpp}, \hyperpage{95}
   \item {temp\_ID}
-    \subitem {Login}, \hyperpage{48}
-    \subitem {Login.cpp}, \hyperpage{94}
+    \subitem {Login}, \hyperpage{52}
+    \subitem {Login.cpp}, \hyperpage{98}
   \item {temp\_NIF}
-    \subitem {Login}, \hyperpage{48}
-    \subitem {Login.cpp}, \hyperpage{95}
-  \item {Temperature}, \hyperpage{61}
-    \subitem {getData}, \hyperpage{62}
-    \subitem {Temperature}, \hyperpage{62}
+    \subitem {Login}, \hyperpage{52}
+    \subitem {Login.cpp}, \hyperpage{99}
+  \item {Temperature}, \hyperpage{65}
+    \subitem {getData}, \hyperpage{66}
+    \subitem {Temperature}, \hyperpage{66}
 
   \indexspace
 
-  \item {User}, \hyperpage{63}
-    \subitem {ADMIN}, \hyperpage{69}
-    \subitem {getNumRecord}, \hyperpage{66}
-    \subitem {getUserADMIN}, \hyperpage{67}
-    \subitem {getUserID}, \hyperpage{67}
-    \subitem {getUserNIF}, \hyperpage{67}
-    \subitem {ID}, \hyperpage{69}
-    \subitem {NIF}, \hyperpage{70}
-    \subitem {numRecord}, \hyperpage{70}
-    \subitem {operator$<$}, \hyperpage{67}
-    \subitem {operator==}, \hyperpage{68}
-    \subitem {setNumRecord}, \hyperpage{68}
-    \subitem {setUserID}, \hyperpage{68}
-    \subitem {setUserNIF}, \hyperpage{69}
-    \subitem {setUserRole}, \hyperpage{69}
-    \subitem {User}, \hyperpage{66}
+  \item {User}, \hyperpage{67}
+    \subitem {ADMIN}, \hyperpage{73}
+    \subitem {getNumRecord}, \hyperpage{70}
+    \subitem {getUserADMIN}, \hyperpage{71}
+    \subitem {getUserID}, \hyperpage{71}
+    \subitem {getUserNIF}, \hyperpage{71}
+    \subitem {ID}, \hyperpage{73}
+    \subitem {NIF}, \hyperpage{74}
+    \subitem {numRecord}, \hyperpage{74}
+    \subitem {operator$<$}, \hyperpage{71}
+    \subitem {operator==}, \hyperpage{72}
+    \subitem {setNumRecord}, \hyperpage{72}
+    \subitem {setUserID}, \hyperpage{72}
+    \subitem {setUserNIF}, \hyperpage{73}
+    \subitem {setUserRole}, \hyperpage{73}
+    \subitem {User}, \hyperpage{70}
   \item {User.cpp}
-    \subitem {ADMIN}, \hyperpage{100}
-    \subitem {ID}, \hyperpage{100}
-    \subitem {NIF}, \hyperpage{100}
+    \subitem {ADMIN}, \hyperpage{104}
+    \subitem {ID}, \hyperpage{104}
+    \subitem {NIF}, \hyperpage{104}
   \item {userList}
-    \subitem {DataBase}, \hyperpage{32}
+    \subitem {DataBase}, \hyperpage{33}
 
   \indexspace
 
   \item {valided}
-    \subitem {DataBase}, \hyperpage{35}
-    \subitem {DataBase.cpp}, \hyperpage{92}
+    \subitem {DataBase}, \hyperpage{37}
+    \subitem {DataBase.cpp}, \hyperpage{96}
   \item {validUser}
-    \subitem {DataBase}, \hyperpage{32}
+    \subitem {DataBase}, \hyperpage{34}
   \item {vectorUser}
-    \subitem {DataBase}, \hyperpage{35}
+    \subitem {DataBase}, \hyperpage{37}
 
   \indexspace
 
   \item {window}
-    \subitem {Security}, \hyperpage{54}
+    \subitem {Security}, \hyperpage{58}
   \item {writeUsers}
-    \subitem {DataBase}, \hyperpage{33}
+    \subitem {DataBase}, \hyperpage{35}
 
 \end{theindex}

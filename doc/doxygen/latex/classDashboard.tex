@@ -6,8 +6,7 @@
 
 
 
-Collaboration diagram for Dashboard\+:
-\nopagebreak
+Collaboration diagram for Dashboard\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -130,11 +129,11 @@ Definition at line 263 of file Dashboard.\+cpp.
 \DoxyCodeLine{275                 cout << \textcolor{stringliteral}{"{}Introduzca ID del nuevo usuario"{}} << endl;}
 \DoxyCodeLine{276                 cout << \textcolor{stringliteral}{"{}>>> "{}};}
 \DoxyCodeLine{277                 cin >> \mbox{\hyperlink{classDashboard_a47f89f10edefb3400b1e3710d376ac4f}{database}}-\/>\mbox{\hyperlink{classDataBase_ac892c4a1e4ce36b70317cae110b9a526}{nuevoID}};}
-\DoxyCodeLine{278                 cout << \mbox{\hyperlink{classDashboard_a47f89f10edefb3400b1e3710d376ac4f}{database}}-\/>\mbox{\hyperlink{classDataBase_ac892c4a1e4ce36b70317cae110b9a526}{nuevoID}} << endl;}
+\DoxyCodeLine{278                 \textcolor{comment}{//cout << database-\/>nuevoID << endl;}}
 \DoxyCodeLine{279                 cout << \textcolor{stringliteral}{"{}Introduzca NIF del nuevo usuario"{}} << endl;}
 \DoxyCodeLine{280                 cout << \textcolor{stringliteral}{"{}>>> "{}};}
 \DoxyCodeLine{281                 cin >> \mbox{\hyperlink{classDashboard_a47f89f10edefb3400b1e3710d376ac4f}{database}}-\/>\mbox{\hyperlink{classDataBase_aa4c9dbbea8e911eab6e59ef7eca65b39}{nuevoNIF}};}
-\DoxyCodeLine{282                 cout << \mbox{\hyperlink{classDashboard_a47f89f10edefb3400b1e3710d376ac4f}{database}}-\/>\mbox{\hyperlink{classDataBase_aa4c9dbbea8e911eab6e59ef7eca65b39}{nuevoNIF}} << endl;}
+\DoxyCodeLine{282                 \textcolor{comment}{//cout << database-\/>nuevoNIF << endl;}}
 \DoxyCodeLine{283                 cout << \textcolor{stringliteral}{"{}¿El usuario es adiministrador? (introduzaca 0 para NO, 1 para SI"{}} << endl;}
 \DoxyCodeLine{284                 cout << \textcolor{stringliteral}{"{}>>> "{}};}
 \DoxyCodeLine{285                 cin >> \mbox{\hyperlink{classDashboard_a47f89f10edefb3400b1e3710d376ac4f}{database}}-\/>\mbox{\hyperlink{classDataBase_a3cb0ff9744020f3e72442d61723bcacf}{admin}};}
@@ -263,7 +262,7 @@ Definition at line 234 of file Dashboard.\+cpp.
 \DoxyCodeLine{238         \mbox{\hyperlink{classDashboard_a47f89f10edefb3400b1e3710d376ac4f}{database}}-\/>\mbox{\hyperlink{classDataBase_af6ab6c26576ea672c207d8553ade271f}{userList}}();}
 \DoxyCodeLine{239         cout << \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}} << endl;}
 \DoxyCodeLine{240         cout << \textcolor{stringliteral}{"{}\(\backslash\)nIntroduzca el ID del usuario que desa borrar o introduzca 0 para volver"{}} << endl;}
-\DoxyCodeLine{241         cout << \mbox{\hyperlink{classDashboard_a47f89f10edefb3400b1e3710d376ac4f}{database}}-\/>\mbox{\hyperlink{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}{actualID}} << endl;}
+\DoxyCodeLine{241         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)tUsuario actual: "{}} << \mbox{\hyperlink{classDashboard_a47f89f10edefb3400b1e3710d376ac4f}{database}}-\/>\mbox{\hyperlink{classDataBase_adc832eb4a1e9966164f926c5c40e3f1f}{actualID}} << endl;}
 \DoxyCodeLine{242         cout << \textcolor{stringliteral}{"{}>>> "{}};}
 \DoxyCodeLine{243         cin >> \mbox{\hyperlink{classDashboard_a02a46fe5c56656a0d5edbda331ce4c8a}{opcion}};}
 \DoxyCodeLine{244         \textcolor{keywordflow}{try} \{}
@@ -319,8 +318,7 @@ Definition at line 312 of file Dashboard.\+cpp.
 \DoxyCodeLine{319 \}}
 
 \end{DoxyCode}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
