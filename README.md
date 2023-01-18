@@ -1,7 +1,5 @@
 # P9-Patrones
 
-<<<<<<< HEAD
-=======
 ##### Fecha: 18/01/23
 ##### Author: Peral del Pino, Iker
 ##### Goal: The pourpouse of this exercise is to implement at least one design pattern of our choice and to arrange files and directorys as it's requested
@@ -47,6 +45,7 @@ return 0;
 ## Documentation
 
 To view the doxygen documentation, once the repository is downloaded the next commands are needed to see the *Latex* PDF and the website:
+
 * PDF: Go to the /doc/doxygen/latex directory and write the next command
 
 ```bash
@@ -57,4 +56,3 @@ To view the doxygen documentation, once the repository is downloaded the next co
 ```bash
 ~$ firefox index.html
 ```
->>>>>>> 0f491de709ccb26f02d8d9e06c1bb3f247638dfa
